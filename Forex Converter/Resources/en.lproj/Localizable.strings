@@ -1,0 +1,75 @@
+/* 
+  Localizable.strings
+  Forex Converter
+
+  Created by Idan Moshe on 02/10/2019.
+  Copyright © 2019 Idan Moshe. All rights reserved.
+*/
+
+// MARK: - General
+
+"Support_iOS_13_And_Above" = "Support for iOS 13 and above";
+"replace" = "Replace";
+
+// MARK: - Display
+
+"FCCurrenciesTableViewController.Title" = "Rates";
+"FCCurrenciesTableViewController.LastUpdate" = "As of date";
+
+// MARK: - Keypad
+
+"ClearAll" = "Clear All";
+"Delete" = "Delete";
+"Share" = "Share";
+
+// MARK: - Countries
+
+/* "Australia" = "";
+"United States" = "";
+"Canada" = "";
+"UK" = "";
+"Egypt" = "";
+"Israel" = "";
+"Japan" = "";
+"European Union" = "";
+"Denmark" = "";
+"Norway" = "";
+"Sweden" = "";
+"South Africa" = "";
+"Switzerland" = "";
+"Jordan" = "";
+"Lebanon" = ""; */
+
+// MARK: - Currencies
+
+// MARK: - Languages
+
+"Change Language" = "Change Language";
+
+"Hebrew" = "עברית";
+"English" = "English";
+"Arabic" = "اللغة العربية";
+
+// MARK: - Alerts
+
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Restarp_App_Question" = "Restart app?";
+
+"help_alert_1_title" = "Main Currency";
+"help_alert_1_details" = "Select one of three rows to make it main currency";
+"help_alert_1_button" = "Next";
+
+"help_alert_2_title" = "Active currency";
+"help_alert_2_details" = "Tap the arrows to change currency";
+"help_alert_2_button" = "Close";
+
+// MARK: - Settings
+
+"Settings" = "Settings";
+"Look" = "Look";
+"Dark" = "Dark";
+"Light" = "Light";
+"Current Language" = "Current Language";
+"Share" = "Share";
+"Language" = "Language";

@@ -1,0 +1,87 @@
+/* 
+  Localizable.strings
+  Forex Converter
+
+  Created by Idan Moshe on 02/10/2019.
+  Copyright © 2019 Idan Moshe. All rights reserved.
+*/
+
+// MARK: - General
+
+"Support_iOS_13_And_Above" = "دعم لنظام iOS 13 وما فوق";
+"replace" = "يحل محل";
+
+// MARK: - Display
+
+"FCCurrenciesTableViewController.Title" = "أسعار الفوركس";
+"FCCurrenciesTableViewController.LastUpdate" = "اخر تحديث";
+
+// MARK: - Keypad
+
+"ClearAll" = "صفر";
+"Delete" = "حذف";
+"Share" = "سهم";
+
+// MARK: - Countries
+
+"Australia" = "استراليا";
+"United States" = "الولايات المتحدة";
+"Canada" = "كندا";
+"UK" = "بريطانيا";
+"Egypt" = "مصر";
+"Israel" = "إسرائيل";
+"Japan" = "يابان";
+"European Union" = "الاتحاد الأوروبي";
+"Denmark" = "الدنمارك";
+"Norway" = "النرويج";
+"Sweden" = "السويد";
+"South Africa" = "جنوب افريقيا";
+"Switzerland" = "سويسرا";
+"Jordan" = "الأردن";
+"Lebanon" = "لبنان";
+
+// MARK: - Currencies
+
+"Dollar" = "دولار";
+"British Pound" = "جنيه إسترليني";
+"Israeli Shekel" = "شيكل إسرائيلي";
+"Egyptian pound" = "جنيه مصرى";
+"Japanse Yen" = "ين ياباني";
+"Euro" = "يورو";
+"Krone" = "کرون";
+"South African Rand" = "راند جنوب أفريقي";
+"Swiss Franc" = "فرنك سويسري";
+"Jordanian Dinar" = "دينار أردني";
+"Lebanese Pound" = "ليرة لبنانية";
+
+// MARK: - Languages
+
+"Change Language" = "تغيير اللغة";
+
+"Hebrew" = "עברית";
+"English" = "English";
+"Arabic" = "اللغة العربية";
+
+// MARK: - Alerts
+
+"OK" = "التأكيد";
+"Cancel" = "الغاء";
+"Restarp_App_Question" = "أعد تشغيل التطبيق؟";
+
+"help_alert_1_title" = "العملة الرئيسية";
+"help_alert_1_details" = "حدد واحدًا من ثلاثة صفوف لجعلها العملة الرئيسية";
+"help_alert_1_button" = "التالي";
+
+"help_alert_2_title" = "العملة النشطة";
+"help_alert_2_details" = "اضغط على الأسهم لتغيير العملة";
+"help_alert_2_button" = "أغلق";
+
+// MARK: - Settings
+
+"Settings" = "الإعدادات";
+"Look" = "نظرة";
+"Dark" = "داكن";
+"Light" = "ضوء";
+"Current Language" = "اللغة الحالية";
+"Share" = "شارك";
+"Language" = "لغة";
