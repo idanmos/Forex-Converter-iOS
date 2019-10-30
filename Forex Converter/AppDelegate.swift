@@ -17,87 +17,61 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var responseData: Data?
     
-    let analyticsReporter: AnalyticsReporter = AnalyticsReporterBase()
+    /// The analytics reporter to inject into classes.
+    /* var analyticsReporter: AnalyticsReporter {
+      fatalError("Subclasses must override and provide an analytics reporter instance!")
+    } */
+    
+    let analyticsReporter: AnalyticsReporter = AnalyticsReporterWrapper()
     
     var isUsingCache: Bool {
         if let _ = self.responseData { return true }
         return false
     }
-    
+
     class func sharedDelegate() -> AppDelegate {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate
     }
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        URLCache.shared.removeAllCachedResponses()
-        URLCache.shared.removeCachedResponses(since: Date(timeIntervalSinceNow: -(60*60*24*365)))
+        self.loadPreferences()
+        self.clearCache()
+        self.load3rdPartyLibraries()
+        self.registerObservers()
+        self.logDebugDetails()
+                
+        self.analyticsReporter.track(.applicationDidFinishLaunchingWithOptions)
+        self.analyticsReporter.track(.deviceDetails(UIDevice.deviceDetails))
         
-        if let _ = UserDefaults.standard.string(forKey: Constants.kPreferredLanguageKey) {} else {
-            UserDefaults.standard.setValue(Constants.kHebrewLanguageValue, forKey: Constants.kPreferredLanguageKey)
-            UserDefaults.standard.synchronize()
-        }
-        
-        if let savedData: Data = UserDefaults.standard.data(forKey: "data") {
-            self.responseData = savedData
-        }
-        
-        #if DEBUG
-        print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
-        #endif
-        
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
-        
-        FirebaseApp.configure()
-        
-        self.analyticsReporter.track(.appStart)
-        
-//        #if DEBUG
-//        print(UIDevice.deviceDetails)
+//        print("Bundle.main.preferredLocalizations: \(Bundle.main.preferredLocalizations)")
 //
-//        print("languageCode: " + (Locale.current.languageCode ?? ""))
-//        print("variantCode: " + (Locale.current.variantCode ?? ""))
-//
-//        #endif
-//
-//        Analytics.logEvent("DeviceDetails", parameters: UIDevice.deviceDetails)
-        
-        ThemeManager.restore()
-        
-        print("Bundle.main.preferredLocalizations: \(Bundle.main.preferredLocalizations)")
-        
-        if let preferredLanguage: String = LocalizationHelper.requestPreferredLanguage() {
-            print("preferredLanguage: \(preferredLanguage)")
-        }
+//        if let preferredLanguage: String = LocalizationHelper.requestPreferredLanguage() {
+//            print("preferredLanguage: \(preferredLanguage)")
+//        }
         
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-        self.analyticsReporter.track(.appClose)
+        self.analyticsReporter.track(.applicationWillResignActive)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        self.analyticsReporter.track(.applicationDidEnterBackground)
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        self.analyticsReporter.track(.applicationWillEnterForeground)
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        self.analyticsReporter.track(.appOpen)
+        self.analyticsReporter.track(.applicationDidBecomeActive)
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+        self.analyticsReporter.track(.applicationWillTerminate)
     }
 
     // MARK: - Core Data stack
@@ -143,6 +117,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    // MARK: - General Methods
+    
+    private func registerObservers() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.userDidTakeScreenshotNotification(note:)),
+                                               name: UIApplication.userDidTakeScreenshotNotification,
+                                               object: nil)
+    }
+    
+    @objc private func userDidTakeScreenshotNotification(note: NSNotification) {
+        self.analyticsReporter.track(.userDidTakeScreenshotNotification)
+    }
+    
+    private func clearCache() {
+        URLCache.shared.removeAllCachedResponses()
+        URLCache.shared.removeCachedResponses(since: Date(timeIntervalSinceNow: -(60*60*24*365)))
+    }
+    
+    private func load3rdPartyLibraries() {
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        FirebaseApp.configure()
+    }
+    
+    private func loadPreferences() {
+        if let savedData: Data = UserDefaults.standard.data(forKey: "data") {
+            self.responseData = savedData
+        }
+        
+        ThemeManager.restore()
+    }
+    
+    private func logDebugDetails() {
+        #if DEBUG
+        print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
+        
+        print("UIDevice.deviceDetails: \(UIDevice.deviceDetails)")
+
+        print("Locale.current.languageCode: " + (Locale.current.languageCode ?? ""))
+        print("Locale.current.variantCode: " + (Locale.current.variantCode ?? ""))
+        #endif
     }
 
 }

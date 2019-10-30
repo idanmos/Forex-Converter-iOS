@@ -8,7 +8,11 @@
 
 import UIKit
 
-extension UIApplication { func makeSnapshot() -> UIImage? { return keyWindow?.layer.makeSnapshot() } }
+extension UIApplication {
+    func makeSnapshot() -> UIImage? {
+        return keyWindow?.layer.makeSnapshot()
+    }
+}
 
 extension CALayer {
     func makeSnapshot() -> UIImage? {

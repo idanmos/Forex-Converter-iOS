@@ -18,7 +18,7 @@ import Foundation
 import Firebase
 
 /// No-op implementation of analytics reporter.
- class AnalyticsReporterBase: AnalyticsReporter {
+ class AnalyticsReporterWrapper: AnalyticsReporter {
 
   public func setOptOut(_ isOptedOut: Bool) {}
     
@@ -40,6 +40,14 @@ import Firebase
         
         if let value: NSNumber = analyticsEvent.value {
             analytics["value"] = value
+        }
+        
+        if let params: [String: String] = analyticsEvent.params {
+            params.forEach { (arg0) in
+                
+                let (key, value) = arg0
+                analytics[key] = value
+            }
         }
         
         Analytics.logEvent(analyticsEvent.action, parameters: analytics)

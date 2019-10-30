@@ -27,12 +27,41 @@ class FCSettingsTableViewController: ForexConverterTableViewController {
     @IBOutlet private weak var darkCheckMarkLabel: UILabel!
     @IBOutlet private weak var lightCheckMarkLabel: UILabel!
     
+    @IBOutlet private weak var mainCurrencyLabel: UILabel!
+    @IBOutlet private weak var currentCurrencyLabel: UILabel!
     
     private lazy var footerView: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44))
         view.backgroundColor = .clear
         return view
     }()
+    
+    private lazy var preferredLanguage: String = {
+        if let preferredLanguages = UserDefaults.standard.object(forKey: Constants.AppleLanguages) as? [String] {
+            if let preferredLanguage: String = preferredLanguages.first {
+                let languageComponents = NSLocale.components(fromLocaleIdentifier: preferredLanguage)
+                if let languageCode = languageComponents[NSLocale.Key.languageCode.rawValue] {
+                    return languageCode
+                }
+            }
+        }
+        return "en_US"
+    }()
+    
+    private lazy var preferredLanguageFormatter: String = {
+        let _preferredLanguage = self.preferredLanguage
+        if preferredLanguage.contains(Language.hebrew.rawValue) {
+            return "Hebrew".localized
+        } else if preferredLanguage.contains(Language.english.rawValue) {
+            return "English".localized
+        } else if preferredLanguage.contains(Language.arabic.rawValue) {
+            return "Arabic".localized
+        } else {
+            return ""
+        }
+    }()
+    
+    private let SegueToLanguages: String = "SegueToLanguages"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +70,7 @@ class FCSettingsTableViewController: ForexConverterTableViewController {
         
         self.tableView.tableFooterView = UIView(frame: .zero)
         
-        self.selectedLanguageLabel.text = self.getSelectedLanguage()
+        self.selectedLanguageLabel.text = self.preferredLanguageFormatter
         
         self.darkTextLabel.text = "Dark".localized
         self.lightTextLabel.text = "Light".localized
@@ -66,19 +95,54 @@ class FCSettingsTableViewController: ForexConverterTableViewController {
             self.lightCheckMarkLabel.isHidden = false
             self.darkCheckMarkLabel.isHidden = true
         }
+        
+        self.mainCurrencyLabel.text = "help_alert_1_title".localized
+        self.currentCurrencyLabel.text = "help_alert_2_title".localized
     }
     
-    private func getSelectedLanguage() -> String {
-        if let selectedLanguage = UserDefaults.standard.value(forKey: Constants.kPreferredLanguageKey) as? String {
-            if selectedLanguage == Constants.kHebrewLanguageValue {
-                return "Hebrew".localized
-            } else if selectedLanguage == Constants.kEnglishLanguageValue {
-                return "English".localized
-            } else if selectedLanguage == Constants.kArabicLanguageValue {
-                return "Arabic".localized
+    /* private func getSelectedLanguage() -> String {
+        if let languages = UserDefaults.standard.object(forKey: Constants.AppleLanguages) as? [String] {
+            if let preferredLanguage: String = languages.first {
+                if preferredLanguage.contains(Language.hebrew.rawValue) {
+                    return "Hebrew".localized
+                } else if preferredLanguage.contains(Language.english.rawValue) {
+                    return "English".localized
+                } else if preferredLanguage.contains(Language.arabic.rawValue) {
+                    return "Arabic".localized
+                }
             }
         }
-        return ""
+        
+    } */
+    
+    // MARK: - General methods
+    
+    private func showFirstHelpScreen() {
+        let helpViewController = AlertHelpViewController.makeViewController()
+        helpViewController.imageView.image = UIImage(named: "help_alert_1")
+        helpViewController.textLabel.text = "help_alert_1_title".localized
+        helpViewController.detailsLabel.text = "help_alert_1_details".localized
+        helpViewController.closeButton.setTitle("help_alert_2_button".localized, for: .normal)
+        
+        helpViewController.setOnCloseEvent {
+            //
+        }
+        
+        self.present(helpViewController, animated: true, completion: nil)
+    }
+    
+    private func showSecondHelpScreen() {
+        let helpViewController = AlertHelpViewController.makeViewController()
+        helpViewController.imageView.image = UIImage(named: "help_alert_1")
+        helpViewController.textLabel.text = "help_alert_2_title".localized
+        helpViewController.detailsLabel.text = "help_alert_2_details".localized
+        helpViewController.closeButton.setTitle("help_alert_2_button".localized, for: .normal)
+        
+        helpViewController.setOnCloseEvent {
+            //
+        }
+        
+        self.present(helpViewController, animated: true, completion: nil)
     }
     
     // MARK: - Table view data source
@@ -88,6 +152,8 @@ class FCSettingsTableViewController: ForexConverterTableViewController {
             return "Look".localized
         } else if section == 1 {
             return "Language".localized
+        } else if section == 2 {
+            return "Help".localized
         } else {
             return ""
         }
@@ -112,51 +178,19 @@ class FCSettingsTableViewController: ForexConverterTableViewController {
         return self.footerView.frame.height
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.section == 1 && indexPath.row == 0 {
+            self.performSegue(withIdentifier: SegueToLanguages, sender: nil)
+        } else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                self.showFirstHelpScreen()
+            } else if indexPath.row == 1 {
+                self.showSecondHelpScreen()
+            }
+        }
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     @IBAction private func onChangeToDarkStylePress(_ sender: Any) {
         ThemeManager.applyStyle(.dark)

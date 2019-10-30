@@ -9,6 +9,12 @@
 import UIKit
 import Foundation
 
+enum Language: String {
+    case hebrew = "he"
+    case english = "en"
+    case arabic = "ar"
+}
+
 class Constants {
     
     static let GoogleAdMobId: String = "ca-app-pub-6158225633661411~1730593880"
@@ -38,15 +44,13 @@ class Constants {
         }
     }
     
-    static let kPreferredLanguageKey: String = "kPreferredLanguageKey"
-    static let kHebrewLanguageValue: String = "he"
-    static let kEnglishLanguageValue: String = "en"
-    static let kArabicLanguageValue: String = "ar"
+    static let AppleLanguages: String = "AppleLanguages"
 }
 
 enum Localization: String {
-    case he_IL
-    case en_US
+    case he_IL = "he-IL"
+    case en_US = "en-US"
+    case ar = "ar"
 }
 
 enum CalculatorKey: Int {

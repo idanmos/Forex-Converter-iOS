@@ -30,7 +30,7 @@ class FCCurrenciesTableViewController: ForexConverterTableViewController {
         return _currencies
     }()
     
-    lazy var searchBar: UISearchBar = {
+    /* lazy var searchBar: UISearchBar = {
         let search = UISearchBar()
         search.searchBarStyle = .prominent
         search.placeholder = " Search..."
@@ -45,7 +45,7 @@ class FCCurrenciesTableViewController: ForexConverterTableViewController {
             // Fallback on earlier versions
         }
         return search
-    }()
+    }() */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,9 +68,9 @@ class FCCurrenciesTableViewController: ForexConverterTableViewController {
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "X", style: .done, target: self, action: #selector(self.closeScreen))
         }
         
-        if self.refferal.count == 0 && self.previousCurrencyCode.count == 0 {
+        /* if self.refferal.count == 0 && self.previousCurrencyCode.count == 0 {
             self.tableView.addSubview(self.searchBar)
-        }
+        } */
     }
     
     // MARK: - General methods
@@ -120,7 +120,12 @@ class FCCurrenciesTableViewController: ForexConverterTableViewController {
         
         let text = "\(currency.sign) \(currency.unit) = " + "\(CurrencyType.ILS.sign) \(currency.rate)"
         cell.textLabel?.text = text
-        cell.detailTextLabel?.text = CurrencyType(rawValue: currency.currencyCode)?.localizedCountry
+        
+        if let localized: String = Locale.current.localizedString(forCurrencyCode: currency.currencyCode) {
+            cell.detailTextLabel?.text = localized
+        } else {
+            cell.detailTextLabel?.text = CurrencyType(rawValue: currency.currencyCode)?.localizedCountry
+        }
         
         return cell
     }
@@ -138,7 +143,7 @@ class FCCurrenciesTableViewController: ForexConverterTableViewController {
     
 }
 
-extension FCCurrenciesTableViewController: UISearchBarDelegate {
+/* extension FCCurrenciesTableViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("searchText: \(searchText)")
@@ -152,4 +157,4 @@ extension FCCurrenciesTableViewController: UISearchBarDelegate {
         print(filtered)
     }
     
-}
+} */

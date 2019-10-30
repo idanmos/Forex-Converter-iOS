@@ -57,14 +57,6 @@ struct FCMainViewControllerLogic {
             // Finish parsing
             FCDataSourceManager.shared().addIsraeliNewShekel()
             self.delegate?.mainViewControllerLogicDidSuccess(self)
-            
-            #if DEBUG
-            for currency: Currency in FCDataSourceManager.shared().currencies {
-                if let localized: String = Locale.current.localizedString(forCurrencyCode: currency.currencyCode) {
-                    print(localized)
-                }
-            }
-            #endif
         }
         
         xmlParser.parse()

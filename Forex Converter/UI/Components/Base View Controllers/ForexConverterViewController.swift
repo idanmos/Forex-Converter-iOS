@@ -12,7 +12,7 @@ import UIKit
 /// analytics tracking.
 class ForexConverterViewController: VisibilityTrackingViewController {
     
-    let analyticsReporter: AnalyticsReporter = AnalyticsReporterBase()
+    let analyticsReporter: AnalyticsReporter = AnalyticsReporterWrapper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class ForexConverterViewController: VisibilityTrackingViewController {
 /// tracking.
 class ForexConverterCollectionViewController: VisibilityTrackingCollectionViewController {
 
-  let analyticsReporter: AnalyticsReporter = AnalyticsReporterBase()
+  let analyticsReporter: AnalyticsReporter = AnalyticsReporterWrapper()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ class ForexConverterCollectionViewController: VisibilityTrackingCollectionViewCo
 /// tracking.
 class ForexConverterTableViewController: VisibilityTrackingTableViewController {
 
-  let analyticsReporter: AnalyticsReporter = AnalyticsReporterBase()
+  let analyticsReporter: AnalyticsReporter = AnalyticsReporterWrapper()
 
     override func viewDidLoad() {
         super.viewDidLoad()

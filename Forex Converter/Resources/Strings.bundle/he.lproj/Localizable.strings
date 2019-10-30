@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   Forex Converter
 
@@ -85,3 +85,4 @@
 "Current Language" = "שפה נוכחית";
 "Share" = "שיתוף";
 "Language" = "שפה";
+"Help" = "עזרה";

@@ -10,17 +10,17 @@
 		8A09D349234FA3A4005A91D7 /* FCActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A09D348234FA3A4005A91D7 /* FCActivityView.xib */; };
 		8A09D34D234FB83E005A91D7 /* SnapshotProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09D34C234FB83E005A91D7 /* SnapshotProvider.swift */; };
 		8A09D34F234FB9FB005A91D7 /* CloseButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A09D34E234FB9FB005A91D7 /* CloseButtonView.xib */; };
-		8A19EBF6234FDECA00744D65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A19EBF8234FDECA00744D65 /* Localizable.strings */; };
 		8A19EBFC2351C7B100744D65 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EBFB2351C7B100744D65 /* UIAlertController+Extensions.swift */; };
 		8A19EBFE2351D8B500744D65 /* String+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EBFD2351D8B500744D65 /* String+Extenions.swift */; };
 		8A19EC002351D92B00744D65 /* Bundle+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EBFF2351D92B00744D65 /* Bundle+Extenions.swift */; };
-		8A19EC022351D9D100744D65 /* AppDelegateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EC012351D9D100744D65 /* AppDelegateProvider.swift */; };
+		8A19EC022351D9D100744D65 /* AppDelegateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EC012351D9D100744D65 /* AppDelegateWrapper.swift */; };
+		8A47A8CF2365B93E000142EE /* FCNumericKeypadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47A8CE2365B93E000142EE /* FCNumericKeypadButton.swift */; };
 		8A48B0CE2349BC39000BC297 /* FCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A48B0CD2349BC39000BC297 /* FCMainViewController.swift */; };
 		8A48B0D02349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A48B0CF2349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift */; };
 		8A57CB9023599575008FEFCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A57CB8F23599575008FEFCE /* GoogleService-Info.plist */; };
 		8A57CB9723599BD0008FEFCE /* AnalyticsScreenViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9223599BD0008FEFCE /* AnalyticsScreenViews.swift */; };
 		8A57CB9923599BD0008FEFCE /* AnalyticsReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9423599BD0008FEFCE /* AnalyticsReporter.swift */; };
-		8A57CB9A23599BD0008FEFCE /* AnalyticsReporterBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9523599BD0008FEFCE /* AnalyticsReporterBase.swift */; };
+		8A57CB9A23599BD0008FEFCE /* AnalyticsReporterWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9523599BD0008FEFCE /* AnalyticsReporterWrapper.swift */; };
 		8A57CB9B23599BD0008FEFCE /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9623599BD0008FEFCE /* AnalyticsEvent.swift */; };
 		8A57CB9D2359A027008FEFCE /* VisibilityTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9C2359A027008FEFCE /* VisibilityTrackingViewController.swift */; };
 		8A57CB9F2359B821008FEFCE /* ForexConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9E2359B821008FEFCE /* ForexConverterViewController.swift */; };
@@ -28,17 +28,15 @@
 		8A57CBAA235C4583008FEFCE /* FCSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CBA9235C4583008FEFCE /* FCSettingsTableViewController.swift */; };
 		8A5FF5F1233E576800F781C4 /* FCActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FF5F0233E576800F781C4 /* FCActivityView.swift */; };
 		8A5FF5FD233FECB100F781C4 /* CalculatorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FF5FC233FECB100F781C4 /* CalculatorProcessor.swift */; };
+		8A6155002368FEA600D0B439 /* Strings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A6154FF2368FEA600D0B439 /* Strings.bundle */; };
 		8A68D6B2235E396F00076735 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A68D6B1235E396F00076735 /* ThemeManager.swift */; };
 		8A68D6B4235E428E00076735 /* FCLanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A68D6B3235E428E00076735 /* FCLanguageTableViewController.swift */; };
-		8A78ED432361F5570079E6DF /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78ED422361F5570079E6DF /* LocalizationHelper.swift */; };
 		8A79B5BF234B048900B1DBA6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8A79B5BE234B048900B1DBA6 /* Alamofire */; };
 		8A929C98233B31690071EFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929C97233B31690071EFC0 /* AppDelegate.swift */; };
 		8A929C9D233B31690071EFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A929C9B233B31690071EFC0 /* Main.storyboard */; };
 		8A929CA0233B31690071EFC0 /* Forex_Converter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A929C9E233B31690071EFC0 /* Forex_Converter.xcdatamodeld */; };
 		8A929CA2233B316B0071EFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A929CA1233B316B0071EFC0 /* Assets.xcassets */; };
 		8A929CA5233B316B0071EFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A929CA3233B316B0071EFC0 /* LaunchScreen.storyboard */; };
-		8A929CB0233B316B0071EFC0 /* Forex_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929CAF233B316B0071EFC0 /* Forex_ConverterTests.swift */; };
-		8A929CBB233B316B0071EFC0 /* Forex_ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929CBA233B316B0071EFC0 /* Forex_ConverterUITests.swift */; };
 		8A929CCD233B336C0071EFC0 /* StoryboardCustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929CCB233B336B0071EFC0 /* StoryboardCustomXibView.swift */; };
 		8A929CCE233B336C0071EFC0 /* UIViewConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929CCC233B336B0071EFC0 /* UIViewConstraintsExtension.swift */; };
 		8A929CD8233B43480071EFC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929CD7233B43480071EFC0 /* Constants.swift */; };
@@ -59,23 +57,6 @@
 		B2038B8011D0C71F34A0FC15 /* Pods_Forex_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68C93A712B03DCAE450B9C4 /* Pods_Forex_Converter.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8A929CAC233B316B0071EFC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A929C8C233B31690071EFC0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A929C93233B31690071EFC0;
-			remoteInfo = "Forex Converter";
-		};
-		8A929CB7233B316B0071EFC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A929C8C233B31690071EFC0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A929C93233B31690071EFC0;
-			remoteInfo = "Forex Converter";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		8A97CCF22346A2F400DD4C3E /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -91,22 +72,21 @@
 
 /* Begin PBXFileReference section */
 		48DF566611D4B81295D88904 /* Pods-Forex Converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forex Converter.release.xcconfig"; path = "Target Support Files/Pods-Forex Converter/Pods-Forex Converter.release.xcconfig"; sourceTree = "<group>"; };
+		8A04549323632BEC0054301A /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		8A09D348234FA3A4005A91D7 /* FCActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FCActivityView.xib; sourceTree = "<group>"; };
 		8A09D34C234FB83E005A91D7 /* SnapshotProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotProvider.swift; sourceTree = "<group>"; };
 		8A09D34E234FB9FB005A91D7 /* CloseButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CloseButtonView.xib; sourceTree = "<group>"; };
-		8A19EBF7234FDECA00744D65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8A19EBF9234FDEDF00744D65 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8A19EBFA234FDEFC00744D65 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8A19EBFB2351C7B100744D65 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		8A19EBFD2351D8B500744D65 /* String+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extenions.swift"; sourceTree = "<group>"; };
 		8A19EBFF2351D92B00744D65 /* Bundle+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extenions.swift"; sourceTree = "<group>"; };
-		8A19EC012351D9D100744D65 /* AppDelegateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateProvider.swift; sourceTree = "<group>"; };
+		8A19EC012351D9D100744D65 /* AppDelegateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateWrapper.swift; sourceTree = "<group>"; };
+		8A47A8CE2365B93E000142EE /* FCNumericKeypadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNumericKeypadButton.swift; sourceTree = "<group>"; };
 		8A48B0CD2349BC39000BC297 /* FCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMainViewController.swift; sourceTree = "<group>"; };
 		8A48B0CF2349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMainViewControllerPresenterLogic.swift; sourceTree = "<group>"; };
 		8A57CB8F23599575008FEFCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A57CB9223599BD0008FEFCE /* AnalyticsScreenViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenViews.swift; sourceTree = "<group>"; };
 		8A57CB9423599BD0008FEFCE /* AnalyticsReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsReporter.swift; sourceTree = "<group>"; };
-		8A57CB9523599BD0008FEFCE /* AnalyticsReporterBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsReporterBase.swift; sourceTree = "<group>"; };
+		8A57CB9523599BD0008FEFCE /* AnalyticsReporterWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsReporterWrapper.swift; sourceTree = "<group>"; };
 		8A57CB9623599BD0008FEFCE /* AnalyticsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		8A57CB9C2359A027008FEFCE /* VisibilityTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityTrackingViewController.swift; sourceTree = "<group>"; };
 		8A57CB9E2359B821008FEFCE /* ForexConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForexConverterViewController.swift; sourceTree = "<group>"; };
@@ -114,9 +94,10 @@
 		8A57CBA9235C4583008FEFCE /* FCSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCSettingsTableViewController.swift; sourceTree = "<group>"; };
 		8A5FF5F0233E576800F781C4 /* FCActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCActivityView.swift; sourceTree = "<group>"; };
 		8A5FF5FC233FECB100F781C4 /* CalculatorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorProcessor.swift; sourceTree = "<group>"; };
+		8A6154FE2368FE5800D0B439 /* Forex Converter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Forex Converter.entitlements"; sourceTree = "<group>"; };
+		8A6154FF2368FEA600D0B439 /* Strings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Strings.bundle; sourceTree = "<group>"; };
 		8A68D6B1235E396F00076735 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		8A68D6B3235E428E00076735 /* FCLanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCLanguageTableViewController.swift; sourceTree = "<group>"; };
-		8A78ED422361F5570079E6DF /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
 		8A929C94233B31690071EFC0 /* Forex Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forex Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A929C97233B31690071EFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A929C9C233B31690071EFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,12 +105,6 @@
 		8A929CA1233B316B0071EFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A929CA4233B316B0071EFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A929CA6233B316B0071EFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A929CAB233B316B0071EFC0 /* Forex ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Forex ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A929CAF233B316B0071EFC0 /* Forex_ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forex_ConverterTests.swift; sourceTree = "<group>"; };
-		8A929CB1233B316B0071EFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A929CB6233B316B0071EFC0 /* Forex ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Forex ConverterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A929CBA233B316B0071EFC0 /* Forex_ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forex_ConverterUITests.swift; sourceTree = "<group>"; };
-		8A929CBC233B316B0071EFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A929CCB233B336B0071EFC0 /* StoryboardCustomXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardCustomXibView.swift; sourceTree = "<group>"; };
 		8A929CCC233B336B0071EFC0 /* UIViewConstraintsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraintsExtension.swift; sourceTree = "<group>"; };
 		8A929CD7233B43480071EFC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -162,29 +137,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A929CA8233B316B0071EFC0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A929CB3233B316B0071EFC0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A47A8BF2365655F000142EE /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				8A5FF5F0233E576800F781C4 /* FCActivityView.swift */,
+				8A09D348234FA3A4005A91D7 /* FCActivityView.xib */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		8A47A8C023656565000142EE /* Alert Help */ = {
+			isa = PBXGroup;
+			children = (
+				8AAAB925235F4C2000C2A666 /* AlertHelpViewController.swift */,
+				8AAAB926235F4C2000C2A666 /* AlertHelpViewController.xib */,
+			);
+			path = "Alert Help";
+			sourceTree = "<group>";
+		};
 		8A57CB9123599BD0008FEFCE /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
 				8A57CB9623599BD0008FEFCE /* AnalyticsEvent.swift */,
 				8A57CB9423599BD0008FEFCE /* AnalyticsReporter.swift */,
-				8A57CB9523599BD0008FEFCE /* AnalyticsReporterBase.swift */,
+				8A57CB9523599BD0008FEFCE /* AnalyticsReporterWrapper.swift */,
 				8A57CB9223599BD0008FEFCE /* AnalyticsScreenViews.swift */,
 			);
 			path = Analytics;
@@ -212,8 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				8A929C96233B31690071EFC0 /* Forex Converter */,
-				8A929CAE233B316B0071EFC0 /* Forex ConverterTests */,
-				8A929CB9233B316B0071EFC0 /* Forex ConverterUITests */,
 				8A97CCE52346A2F400DD4C3E /* Frameworks */,
 				8A929C95233B31690071EFC0 /* Products */,
 				F20DE492FA9D372871D5122F /* Pods */,
@@ -224,8 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				8A929C94233B31690071EFC0 /* Forex Converter.app */,
-				8A929CAB233B316B0071EFC0 /* Forex ConverterTests.xctest */,
-				8A929CB6233B316B0071EFC0 /* Forex ConverterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,16 +208,15 @@
 		8A929C96233B31690071EFC0 /* Forex Converter */ = {
 			isa = PBXGroup;
 			children = (
-				8A57CB9123599BD0008FEFCE /* Analytics */,
-				8A57CB8F23599575008FEFCE /* GoogleService-Info.plist */,
+				8A6154FE2368FE5800D0B439 /* Forex Converter.entitlements */,
 				8A929C97233B31690071EFC0 /* AppDelegate.swift */,
-				8A19EC012351D9D100744D65 /* AppDelegateProvider.swift */,
-				8A5FF5F0233E576800F781C4 /* FCActivityView.swift */,
-				8A09D348234FA3A4005A91D7 /* FCActivityView.xib */,
+				8A19EC012351D9D100744D65 /* AppDelegateWrapper.swift */,
+				8A57CB9123599BD0008FEFCE /* Analytics */,
 				8A09D34C234FB83E005A91D7 /* SnapshotProvider.swift */,
 				8A09D34E234FB9FB005A91D7 /* CloseButtonView.xib */,
 				8AA0FFAA235F638A005FF7D7 /* help_alert_1.png */,
-				8A78ED422361F5570079E6DF /* LocalizationHelper.swift */,
+				8A04549323632BEC0054301A /* TestPlan.xctestplan */,
+				8AE9EBBC234BAD050081646D /* Extensions */,
 				8AE9EBC4234BAE270081646D /* Common */,
 				8AE9EBC0234BADB20081646D /* UI */,
 				8AE9EBBF234BADA40081646D /* Resources */,
@@ -256,24 +230,6 @@
 				8A68D6B1235E396F00076735 /* ThemeManager.swift */,
 			);
 			path = "Forex Converter";
-			sourceTree = "<group>";
-		};
-		8A929CAE233B316B0071EFC0 /* Forex ConverterTests */ = {
-			isa = PBXGroup;
-			children = (
-				8A929CAF233B316B0071EFC0 /* Forex_ConverterTests.swift */,
-				8A929CB1233B316B0071EFC0 /* Info.plist */,
-			);
-			path = "Forex ConverterTests";
-			sourceTree = "<group>";
-		};
-		8A929CB9233B316B0071EFC0 /* Forex ConverterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8A929CBA233B316B0071EFC0 /* Forex_ConverterUITests.swift */,
-				8A929CBC233B316B0071EFC0 /* Info.plist */,
-			);
-			path = "Forex ConverterUITests";
 			sourceTree = "<group>";
 		};
 		8A929CCA233B336B0071EFC0 /* Base View */ = {
@@ -297,11 +253,11 @@
 		8AE9EBBC234BAD050081646D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8A19EBFD2351D8B500744D65 /* String+Extenions.swift */,
+				8A19EBFF2351D92B00744D65 /* Bundle+Extenions.swift */,
 				8ACB0FBA234289610023190F /* UIImage+Extension.swift */,
 				8ACB0FBC234293F90023190F /* UIView+Extensions.swift */,
 				8A19EBFB2351C7B100744D65 /* UIAlertController+Extensions.swift */,
-				8A19EBFF2351D92B00744D65 /* Bundle+Extenions.swift */,
-				8A19EBFD2351D8B500744D65 /* String+Extenions.swift */,
 				8A57CBA1235A4FCA008FEFCE /* UIDevice+Extensions.swift */,
 			);
 			path = Extensions;
@@ -329,8 +285,9 @@
 		8AE9EBBF234BADA40081646D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8A57CB8F23599575008FEFCE /* GoogleService-Info.plist */,
 				8A929CA1233B316B0071EFC0 /* Assets.xcassets */,
-				8A19EBF8234FDECA00744D65 /* Localizable.strings */,
+				8A6154FF2368FEA600D0B439 /* Strings.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -338,7 +295,6 @@
 		8AE9EBC0234BADB20081646D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				8AE9EBBC234BAD050081646D /* Extensions */,
 				8AE9EBC2234BADCD0081646D /* Components */,
 				8AE9EBC1234BADC20081646D /* Screens */,
 			);
@@ -359,10 +315,11 @@
 		8AE9EBC2234BADCD0081646D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8A47A8CE2365B93E000142EE /* FCNumericKeypadButton.swift */,
+				8A47A8BF2365655F000142EE /* Loader */,
 				8A57CBA02359B924008FEFCE /* Base View Controllers */,
 				8A929CCA233B336B0071EFC0 /* Base View */,
-				8AAAB925235F4C2000C2A666 /* AlertHelpViewController.swift */,
-				8AAAB926235F4C2000C2A666 /* AlertHelpViewController.xib */,
+				8A47A8C023656565000142EE /* Alert Help */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -429,63 +386,19 @@
 			productReference = 8A929C94233B31690071EFC0 /* Forex Converter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8A929CAA233B316B0071EFC0 /* Forex ConverterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A929CC2233B316B0071EFC0 /* Build configuration list for PBXNativeTarget "Forex ConverterTests" */;
-			buildPhases = (
-				8A929CA7233B316B0071EFC0 /* Sources */,
-				8A929CA8233B316B0071EFC0 /* Frameworks */,
-				8A929CA9233B316B0071EFC0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A929CAD233B316B0071EFC0 /* PBXTargetDependency */,
-			);
-			name = "Forex ConverterTests";
-			productName = "Forex ConverterTests";
-			productReference = 8A929CAB233B316B0071EFC0 /* Forex ConverterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8A929CB5233B316B0071EFC0 /* Forex ConverterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A929CC5233B316B0071EFC0 /* Build configuration list for PBXNativeTarget "Forex ConverterUITests" */;
-			buildPhases = (
-				8A929CB2233B316B0071EFC0 /* Sources */,
-				8A929CB3233B316B0071EFC0 /* Frameworks */,
-				8A929CB4233B316B0071EFC0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A929CB8233B316B0071EFC0 /* PBXTargetDependency */,
-			);
-			name = "Forex ConverterUITests";
-			productName = "Forex ConverterUITests";
-			productReference = 8A929CB6233B316B0071EFC0 /* Forex ConverterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8A929C8C233B31690071EFC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = FC;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Idan Moshe";
 				TargetAttributes = {
 					8A929C93233B31690071EFC0 = {
 						CreatedOnToolsVersion = 10.3;
-					};
-					8A929CAA233B316B0071EFC0 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 8A929C93233B31690071EFC0;
-					};
-					8A929CB5233B316B0071EFC0 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 8A929C93233B31690071EFC0;
 					};
 				};
 			};
@@ -508,8 +421,6 @@
 			projectRoot = "";
 			targets = (
 				8A929C93233B31690071EFC0 /* Forex Converter */,
-				8A929CAA233B316B0071EFC0 /* Forex ConverterTests */,
-				8A929CB5233B316B0071EFC0 /* Forex ConverterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -522,26 +433,12 @@
 				8A929CA5233B316B0071EFC0 /* LaunchScreen.storyboard in Resources */,
 				8AAAB928235F4C2000C2A666 /* AlertHelpViewController.xib in Resources */,
 				8A929CA2233B316B0071EFC0 /* Assets.xcassets in Resources */,
+				8A6155002368FEA600D0B439 /* Strings.bundle in Resources */,
 				8A929C9D233B31690071EFC0 /* Main.storyboard in Resources */,
 				8A09D349234FA3A4005A91D7 /* FCActivityView.xib in Resources */,
-				8A19EBF6234FDECA00744D65 /* Localizable.strings in Resources */,
 				8AA0FFAB235F638B005FF7D7 /* help_alert_1.png in Resources */,
 				8A09D34F234FB9FB005A91D7 /* CloseButtonView.xib in Resources */,
 				8A57CB9023599575008FEFCE /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A929CA9233B316B0071EFC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A929CB4233B316B0071EFC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,12 +496,13 @@
 				8A57CB9F2359B821008FEFCE /* ForexConverterViewController.swift in Sources */,
 				8A09D34D234FB83E005A91D7 /* SnapshotProvider.swift in Sources */,
 				8A57CB9D2359A027008FEFCE /* VisibilityTrackingViewController.swift in Sources */,
+				8A47A8CF2365B93E000142EE /* FCNumericKeypadButton.swift in Sources */,
 				8A929D2F233C05420071EFC0 /* FCXMLParser.swift in Sources */,
 				8A929D2B233BEAA90071EFC0 /* FCNetworkManager.swift in Sources */,
 				8AE9EBC9234BAEF90081646D /* FCKeypadLogic.swift in Sources */,
 				8A19EBFC2351C7B100744D65 /* UIAlertController+Extensions.swift in Sources */,
 				8A929CCD233B336C0071EFC0 /* StoryboardCustomXibView.swift in Sources */,
-				8A19EC022351D9D100744D65 /* AppDelegateProvider.swift in Sources */,
+				8A19EC022351D9D100744D65 /* AppDelegateWrapper.swift in Sources */,
 				8ACB0FBD234293F90023190F /* UIView+Extensions.swift in Sources */,
 				8A48B0D02349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift in Sources */,
 				8A929D33233C0C5F0071EFC0 /* Currency.swift in Sources */,
@@ -619,9 +517,8 @@
 				8ACB0FBB234289610023190F /* UIImage+Extension.swift in Sources */,
 				8A57CBAA235C4583008FEFCE /* FCSettingsTableViewController.swift in Sources */,
 				8A929CA0233B31690071EFC0 /* Forex_Converter.xcdatamodeld in Sources */,
-				8A57CB9A23599BD0008FEFCE /* AnalyticsReporterBase.swift in Sources */,
+				8A57CB9A23599BD0008FEFCE /* AnalyticsReporterWrapper.swift in Sources */,
 				8ACB0FC12342A92B0023190F /* FCCurrenciesTableViewController.swift in Sources */,
-				8A78ED432361F5570079E6DF /* LocalizationHelper.swift in Sources */,
 				8A57CB9923599BD0008FEFCE /* AnalyticsReporter.swift in Sources */,
 				8AE9EBC7234BAEEF0081646D /* FCDisplayLogic.swift in Sources */,
 				8A68D6B2235E396F00076735 /* ThemeManager.swift in Sources */,
@@ -634,48 +531,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A929CA7233B316B0071EFC0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A929CB0233B316B0071EFC0 /* Forex_ConverterTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A929CB2233B316B0071EFC0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A929CBB233B316B0071EFC0 /* Forex_ConverterUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		8A929CAD233B316B0071EFC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A929C93233B31690071EFC0 /* Forex Converter */;
-			targetProxy = 8A929CAC233B316B0071EFC0 /* PBXContainerItemProxy */;
-		};
-		8A929CB8233B316B0071EFC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A929C93233B31690071EFC0 /* Forex Converter */;
-			targetProxy = 8A929CB7233B316B0071EFC0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		8A19EBF8234FDECA00744D65 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A19EBF7234FDECA00744D65 /* en */,
-				8A19EBF9234FDEDF00744D65 /* he */,
-				8A19EBFA234FDEFC00744D65 /* ar */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		8A929C9B233B31690071EFC0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -747,7 +605,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -803,7 +661,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -819,8 +677,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Forex Converter/Forex Converter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.4;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = N3N3LX399B;
 				INFOPLIST_FILE = "Forex Converter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -831,6 +690,7 @@
 				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.idanmoshe.forexconverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -842,8 +702,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Forex Converter/Forex Converter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.4;
+				CURRENT_PROJECT_VERSION = 3.0;
 				DEVELOPMENT_TEAM = N3N3LX399B;
 				INFOPLIST_FILE = "Forex Converter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -854,90 +715,9 @@
 				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.idanmoshe.forexconverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		8A929CC3233B316B0071EFC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3FJB5D6E9;
-				INFOPLIST_FILE = "Forex ConverterTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idanmoshe.Forex-ConverterTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forex Converter.app/Forex Converter";
-			};
-			name = Debug;
-		};
-		8A929CC4233B316B0071EFC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3FJB5D6E9;
-				INFOPLIST_FILE = "Forex ConverterTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idanmoshe.Forex-ConverterTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forex Converter.app/Forex Converter";
-			};
-			name = Release;
-		};
-		8A929CC6233B316B0071EFC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3FJB5D6E9;
-				INFOPLIST_FILE = "Forex ConverterUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idanmoshe.Forex-ConverterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Forex Converter";
-			};
-			name = Debug;
-		};
-		8A929CC7233B316B0071EFC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3FJB5D6E9;
-				INFOPLIST_FILE = "Forex ConverterUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.idanmoshe.Forex-ConverterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Forex Converter";
 			};
 			name = Release;
 		};
@@ -958,24 +738,6 @@
 			buildConfigurations = (
 				8A929CC0233B316B0071EFC0 /* Debug */,
 				8A929CC1233B316B0071EFC0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A929CC2233B316B0071EFC0 /* Build configuration list for PBXNativeTarget "Forex ConverterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A929CC3233B316B0071EFC0 /* Debug */,
-				8A929CC4233B316B0071EFC0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A929CC5233B316B0071EFC0 /* Build configuration list for PBXNativeTarget "Forex ConverterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A929CC6233B316B0071EFC0 /* Debug */,
-				8A929CC7233B316B0071EFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

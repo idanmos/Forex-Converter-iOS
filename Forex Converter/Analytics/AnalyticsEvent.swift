@@ -26,23 +26,54 @@ public struct AnalyticsEvent {
     var action: String
     var label: String?
     var value: NSNumber?
+    var params: [String: String]?
 
-    init(category: String, action: String, label: String? = nil, value: NSNumber? = nil) {
-      self.category = category
-      self.action = action
-      self.label = label
-      self.value = value
+    init(category: String,
+         action: String,
+         label: String? = nil,
+         value: NSNumber? = nil,
+         params: [String: String]? = nil) {
+        self.category = category
+        self.action = action
+        self.label = label
+        self.value = value
+        self.params = params
     }
     
   // MARK: - Events
 
     // MARK: App
     
-    static let categoryApp = "App"
+    static let categoryAppDelegate = "AppDelegate"
+        
+    static let applicationDidFinishLaunchingWithOptions = AnalyticsEvent(category: categoryAppDelegate,
+                                                                         action: "applicationDidFinishLaunchingWithOptions")
     
-    static let appStart = AnalyticsEvent(category: categoryApp, action: "AppStart")
-    static let appOpen = AnalyticsEvent(category: categoryApp, action: "AppOpen")
-    static let appClose = AnalyticsEvent(category: categoryApp, action: "AppClose")
+    static let applicationWillResignActive = AnalyticsEvent(category: categoryAppDelegate,
+                                                            action: "applicationWillResignActive")
+    
+    static let applicationDidEnterBackground = AnalyticsEvent(category: categoryAppDelegate,
+                                                              action: "applicationDidEnterBackground")
+    
+    static let applicationWillEnterForeground = AnalyticsEvent(category: categoryAppDelegate,
+                                                               action: "applicationWillEnterForeground")
+    
+    static let applicationDidBecomeActive = AnalyticsEvent(category: categoryAppDelegate,
+                                                           action: "applicationDidBecomeActive")
+    
+    static let applicationWillTerminate = AnalyticsEvent(category: categoryAppDelegate,
+                                                         action: "applicationWillTerminate")
+    
+    // MARL: - Device
+    
+    static let categoryDevice = "Device"
+        
+    static let userDidTakeScreenshotNotification = AnalyticsEvent(category: categoryDevice,
+                                                                  action: "userDidTakeScreenshotNotification")
+    
+    static func deviceDetails(_ params: [String: String]) -> AnalyticsEvent {
+        return AnalyticsEvent(category: categoryDevice, action: "deviceDetails", params: params)
+    }
     
   // MARK: Display
 

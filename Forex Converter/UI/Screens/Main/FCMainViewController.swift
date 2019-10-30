@@ -76,6 +76,8 @@ class FCMainViewController: ForexConverterViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.zeroNumberButton.showsTouchWhenHighlighted = true
+        
         self.navigationController?.navigationBar.semanticContentAttribute = .forceLeftToRight
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -93,13 +95,13 @@ class FCMainViewController: ForexConverterViewController {
         settingsBarButton.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 35)],
                                                  for: .normal)
         
-        let listBarButton = UIBarButtonItem(barButtonSystemItem: .search,
+        let listBarButton = UIBarButtonItem(barButtonSystemItem: .bookmarks,
                                             target: self,
                                             action: #selector(self.showCurrenciesListScreen))
         
         self.navigationItem.setRightBarButtonItems([settingsBarButton, listBarButton], animated: true)
         
-        let shareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(self.onMakeSnapshotPress(_:)))
+        let shareButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(self.onMakeSnapshotPress(_:)))
         
         self.navigationItem.setLeftBarButton(shareButton, animated: true)
         
