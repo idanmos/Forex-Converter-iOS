@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rSt-gu-jO3" customClass="FeedTableViewCell" customModule="Forex_Converter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rSt-gu-jO3" id="dFq-Pg-zPk">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="טקסט" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4I-dx-Jy9">
+                        <rect key="frame" x="258.5" y="20" width="41.5" height="28"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="טקסט" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpb-ML-Wmd">
+                        <rect key="frame" x="20" y="49" width="35" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="y4I-dx-Jy9" secondAttribute="trailing" constant="20" symbolic="YES" id="LZ1-A7-jwc"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lpb-ML-Wmd" secondAttribute="trailing" constant="20" id="QF5-mv-JB0"/>
+                    <constraint firstAttribute="bottom" secondItem="Lpb-ML-Wmd" secondAttribute="bottom" constant="20" symbolic="YES" id="REA-SU-uHr"/>
+                    <constraint firstItem="y4I-dx-Jy9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dFq-Pg-zPk" secondAttribute="leading" constant="20" id="RcR-os-eFO"/>
+                    <constraint firstItem="y4I-dx-Jy9" firstAttribute="top" secondItem="dFq-Pg-zPk" secondAttribute="top" constant="20" symbolic="YES" id="Tcp-az-19z"/>
+                    <constraint firstItem="Lpb-ML-Wmd" firstAttribute="leading" secondItem="dFq-Pg-zPk" secondAttribute="leading" constant="20" symbolic="YES" id="awb-pd-SBy"/>
+                    <constraint firstItem="Lpb-ML-Wmd" firstAttribute="firstBaseline" secondItem="y4I-dx-Jy9" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="tzy-hX-8zw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="HhU-pa-PME"/>
+            <connections>
+                <outlet property="feedDateLabel" destination="Lpb-ML-Wmd" id="YPr-ui-b1c"/>
+                <outlet property="feedTitleLabel" destination="y4I-dx-Jy9" id="RZj-VN-OYW"/>
+            </connections>
+            <point key="canvasLocation" x="-197" y="123"/>
+        </tableViewCell>
+    </objects>
+</document>

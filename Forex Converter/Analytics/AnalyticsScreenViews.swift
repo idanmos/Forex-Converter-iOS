@@ -48,22 +48,16 @@ extension ForexConverterTableViewController: AnalyticsTrackable {
   }
 }
 
-// MARK: Main
+// MARK: - Custom ViewControllers Names
 
-extension FCMainViewController {
-  override var analyticsViewName: String { return "MainScreen" }
+extension RatesViewController {
+  override var analyticsViewName: String { return "Rates" }
 }
 
-// MARK: - Currencies List
-
-extension FCCurrenciesTableViewController {
-  override var analyticsViewName: String { return "CurrenciesScreen" }
+extension RatesConverterViewController {
+  override var analyticsViewName: String { return "Rates Converter" }
 }
 
-extension FCSettingsTableViewController {
-    override var analyticsViewName: String { return "SettingsScreen" }
-}
-
-extension FCLanguageTableViewController {
-    override var analyticsViewName: String { return "LanguagesScreen" }
+extension FeedTableViewController {
+    override var analyticsViewName: String { return "RSS Feed" }
 }

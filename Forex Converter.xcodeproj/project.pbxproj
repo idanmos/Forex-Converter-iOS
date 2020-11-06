@@ -7,53 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A09D349234FA3A4005A91D7 /* FCActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A09D348234FA3A4005A91D7 /* FCActivityView.xib */; };
-		8A09D34D234FB83E005A91D7 /* SnapshotProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09D34C234FB83E005A91D7 /* SnapshotProvider.swift */; };
-		8A09D34F234FB9FB005A91D7 /* CloseButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A09D34E234FB9FB005A91D7 /* CloseButtonView.xib */; };
-		8A19EBFC2351C7B100744D65 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EBFB2351C7B100744D65 /* UIAlertController+Extensions.swift */; };
-		8A19EBFE2351D8B500744D65 /* String+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EBFD2351D8B500744D65 /* String+Extenions.swift */; };
-		8A19EC002351D92B00744D65 /* Bundle+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EBFF2351D92B00744D65 /* Bundle+Extenions.swift */; };
 		8A19EC022351D9D100744D65 /* AppDelegateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19EC012351D9D100744D65 /* AppDelegateWrapper.swift */; };
-		8A47A8CF2365B93E000142EE /* FCNumericKeypadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47A8CE2365B93E000142EE /* FCNumericKeypadButton.swift */; };
-		8A48B0CE2349BC39000BC297 /* FCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A48B0CD2349BC39000BC297 /* FCMainViewController.swift */; };
-		8A48B0D02349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A48B0CF2349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift */; };
+		8A351C882551E11E0063289B /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A351C872551E11E0063289B /* Application.swift */; };
+		8A351C8B2551E3FD0063289B /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A351C8A2551E3FD0063289B /* RatesViewController.swift */; };
 		8A57CB9023599575008FEFCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A57CB8F23599575008FEFCE /* GoogleService-Info.plist */; };
 		8A57CB9723599BD0008FEFCE /* AnalyticsScreenViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9223599BD0008FEFCE /* AnalyticsScreenViews.swift */; };
 		8A57CB9923599BD0008FEFCE /* AnalyticsReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9423599BD0008FEFCE /* AnalyticsReporter.swift */; };
 		8A57CB9A23599BD0008FEFCE /* AnalyticsReporterWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9523599BD0008FEFCE /* AnalyticsReporterWrapper.swift */; };
-		8A57CB9B23599BD0008FEFCE /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9623599BD0008FEFCE /* AnalyticsEvent.swift */; };
 		8A57CB9D2359A027008FEFCE /* VisibilityTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9C2359A027008FEFCE /* VisibilityTrackingViewController.swift */; };
 		8A57CB9F2359B821008FEFCE /* ForexConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CB9E2359B821008FEFCE /* ForexConverterViewController.swift */; };
-		8A57CBA2235A4FCA008FEFCE /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CBA1235A4FCA008FEFCE /* UIDevice+Extensions.swift */; };
-		8A57CBAA235C4583008FEFCE /* FCSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57CBA9235C4583008FEFCE /* FCSettingsTableViewController.swift */; };
-		8A5FF5F1233E576800F781C4 /* FCActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FF5F0233E576800F781C4 /* FCActivityView.swift */; };
-		8A5FF5FD233FECB100F781C4 /* CalculatorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FF5FC233FECB100F781C4 /* CalculatorProcessor.swift */; };
 		8A6155002368FEA600D0B439 /* Strings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A6154FF2368FEA600D0B439 /* Strings.bundle */; };
-		8A68D6B2235E396F00076735 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A68D6B1235E396F00076735 /* ThemeManager.swift */; };
-		8A68D6B4235E428E00076735 /* FCLanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A68D6B3235E428E00076735 /* FCLanguageTableViewController.swift */; };
 		8A79B5BF234B048900B1DBA6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8A79B5BE234B048900B1DBA6 /* Alamofire */; };
 		8A929C98233B31690071EFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929C97233B31690071EFC0 /* AppDelegate.swift */; };
-		8A929C9D233B31690071EFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A929C9B233B31690071EFC0 /* Main.storyboard */; };
 		8A929CA0233B31690071EFC0 /* Forex_Converter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A929C9E233B31690071EFC0 /* Forex_Converter.xcdatamodeld */; };
 		8A929CA2233B316B0071EFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A929CA1233B316B0071EFC0 /* Assets.xcassets */; };
 		8A929CA5233B316B0071EFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A929CA3233B316B0071EFC0 /* LaunchScreen.storyboard */; };
 		8A929CCD233B336C0071EFC0 /* StoryboardCustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929CCB233B336B0071EFC0 /* StoryboardCustomXibView.swift */; };
 		8A929CCE233B336C0071EFC0 /* UIViewConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929CCC233B336B0071EFC0 /* UIViewConstraintsExtension.swift */; };
 		8A929CD8233B43480071EFC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929CD7233B43480071EFC0 /* Constants.swift */; };
-		8A929D2B233BEAA90071EFC0 /* FCNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929D2A233BEAA90071EFC0 /* FCNetworkManager.swift */; };
-		8A929D2F233C05420071EFC0 /* FCXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929D2E233C05420071EFC0 /* FCXMLParser.swift */; };
-		8A929D31233C0BF10071EFC0 /* FCDataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929D30233C0BF10071EFC0 /* FCDataSourceManager.swift */; };
+		8A929D2B233BEAA90071EFC0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929D2A233BEAA90071EFC0 /* NetworkManager.swift */; };
+		8A929D2F233C05420071EFC0 /* BankOfIsraelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929D2E233C05420071EFC0 /* BankOfIsraelParser.swift */; };
 		8A929D33233C0C5F0071EFC0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929D32233C0C5F0071EFC0 /* Currency.swift */; };
-		8AA0FFAB235F638B005FF7D7 /* help_alert_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA0FFAA235F638A005FF7D7 /* help_alert_1.png */; };
-		8AA63F8A2356E6160078EC02 /* FCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA63F892356E6160078EC02 /* FCFileManager.swift */; };
-		8AAAB927235F4C2000C2A666 /* AlertHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAB925235F4C2000C2A666 /* AlertHelpViewController.swift */; };
-		8AAAB928235F4C2000C2A666 /* AlertHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AAAB926235F4C2000C2A666 /* AlertHelpViewController.xib */; };
-		8AB0F12823436CA700850B4A /* FCRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0F12623436CA700850B4A /* FCRateTableViewCell.swift */; };
-		8ACB0FBB234289610023190F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB0FBA234289610023190F /* UIImage+Extension.swift */; };
-		8ACB0FBD234293F90023190F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB0FBC234293F90023190F /* UIView+Extensions.swift */; };
-		8ACB0FC12342A92B0023190F /* FCCurrenciesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB0FC02342A92B0023190F /* FCCurrenciesTableViewController.swift */; };
-		8AE9EBC7234BAEEF0081646D /* FCDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE9EBC6234BAEEF0081646D /* FCDisplayLogic.swift */; };
-		8AE9EBC9234BAEF90081646D /* FCKeypadLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE9EBC8234BAEF90081646D /* FCKeypadLogic.swift */; };
+		8AA9119C2552B5E200ABCAA9 /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911972552B5E200ABCAA9 /* RSSItem.swift */; };
+		8AA9119E2552B5E200ABCAA9 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA9119A2552B5E200ABCAA9 /* RSSParser.swift */; };
+		8AA911A42552BBF700ABCAA9 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911A32552BBF700ABCAA9 /* FeedTableViewController.swift */; };
+		8AA911A82552C01E00ABCAA9 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911A62552C01E00ABCAA9 /* FeedTableViewCell.swift */; };
+		8AA911A92552C01E00ABCAA9 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA911A72552C01E00ABCAA9 /* FeedTableViewCell.xib */; };
+		8AA911AC2553047000ABCAA9 /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911AB2553047000ABCAA9 /* Locale+Extension.swift */; };
+		8AA911CD2553307A00ABCAA9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911CC2553307A00ABCAA9 /* Coordinator.swift */; };
+		8AA911D0255330AE00ABCAA9 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911CF255330AE00ABCAA9 /* ApplicationCoordinator.swift */; };
+		8AA911D42553336B00ABCAA9 /* RatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA911D32553336B00ABCAA9 /* RatesViewController.xib */; };
+		8AA911E02553B32800ABCAA9 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911DF2553B32800ABCAA9 /* NSObject+Extension.swift */; };
+		8AA911E62553B97100ABCAA9 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911E52553B97100ABCAA9 /* FeedViewModel.swift */; };
+		8AA911FD2554063D00ABCAA9 /* RatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA911FC2554063D00ABCAA9 /* RatesViewModel.swift */; };
+		8AA912012554237300ABCAA9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA912002554237300ABCAA9 /* DateFormatter+Extension.swift */; };
+		8AA9121A2554283100ABCAA9 /* FeedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA912192554283100ABCAA9 /* FeedTableViewController.xib */; };
+		8AA9121E2554300D00ABCAA9 /* RatesConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA9121C2554300D00ABCAA9 /* RatesConverterViewController.swift */; };
+		8AA9121F2554300D00ABCAA9 /* RatesConverterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA9121D2554300D00ABCAA9 /* RatesConverterViewController.xib */; };
+		8AA9122F25545F2000ABCAA9 /* RatesConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA9122E25545F2000ABCAA9 /* RatesConverterViewModel.swift */; };
+		8AA9123325545F7000ABCAA9 /* InstagramStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA9123225545F7000ABCAA9 /* InstagramStory.swift */; };
+		8AA912422555266C00ABCAA9 /* RatesConverterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA912402555266C00ABCAA9 /* RatesConverterTableViewCell.swift */; };
+		8AA912432555266C00ABCAA9 /* RatesConverterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA912412555266C00ABCAA9 /* RatesConverterTableViewCell.xib */; };
+		8AA9124B255530F800ABCAA9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA9124A255530F800ABCAA9 /* UIImage+Extension.swift */; };
+		8ABB7A512551DC750023D59B /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB7A4F2551DC750023D59B /* RateTableViewCell.swift */; };
+		8ABB7A522551DC750023D59B /* RateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB7A502551DC750023D59B /* RateTableViewCell.xib */; };
 		B2038B8011D0C71F34A0FC15 /* Pods_Forex_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68C93A712B03DCAE450B9C4 /* Pods_Forex_Converter.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,35 +69,19 @@
 
 /* Begin PBXFileReference section */
 		48DF566611D4B81295D88904 /* Pods-Forex Converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forex Converter.release.xcconfig"; path = "Target Support Files/Pods-Forex Converter/Pods-Forex Converter.release.xcconfig"; sourceTree = "<group>"; };
-		8A04549323632BEC0054301A /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
-		8A09D348234FA3A4005A91D7 /* FCActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FCActivityView.xib; sourceTree = "<group>"; };
-		8A09D34C234FB83E005A91D7 /* SnapshotProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotProvider.swift; sourceTree = "<group>"; };
-		8A09D34E234FB9FB005A91D7 /* CloseButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CloseButtonView.xib; sourceTree = "<group>"; };
-		8A19EBFB2351C7B100744D65 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
-		8A19EBFD2351D8B500744D65 /* String+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extenions.swift"; sourceTree = "<group>"; };
-		8A19EBFF2351D92B00744D65 /* Bundle+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extenions.swift"; sourceTree = "<group>"; };
 		8A19EC012351D9D100744D65 /* AppDelegateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateWrapper.swift; sourceTree = "<group>"; };
-		8A47A8CE2365B93E000142EE /* FCNumericKeypadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNumericKeypadButton.swift; sourceTree = "<group>"; };
-		8A48B0CD2349BC39000BC297 /* FCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMainViewController.swift; sourceTree = "<group>"; };
-		8A48B0CF2349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMainViewControllerPresenterLogic.swift; sourceTree = "<group>"; };
+		8A351C872551E11E0063289B /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		8A351C8A2551E3FD0063289B /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		8A57CB8F23599575008FEFCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A57CB9223599BD0008FEFCE /* AnalyticsScreenViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenViews.swift; sourceTree = "<group>"; };
 		8A57CB9423599BD0008FEFCE /* AnalyticsReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsReporter.swift; sourceTree = "<group>"; };
 		8A57CB9523599BD0008FEFCE /* AnalyticsReporterWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsReporterWrapper.swift; sourceTree = "<group>"; };
-		8A57CB9623599BD0008FEFCE /* AnalyticsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		8A57CB9C2359A027008FEFCE /* VisibilityTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityTrackingViewController.swift; sourceTree = "<group>"; };
 		8A57CB9E2359B821008FEFCE /* ForexConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForexConverterViewController.swift; sourceTree = "<group>"; };
-		8A57CBA1235A4FCA008FEFCE /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
-		8A57CBA9235C4583008FEFCE /* FCSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCSettingsTableViewController.swift; sourceTree = "<group>"; };
-		8A5FF5F0233E576800F781C4 /* FCActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCActivityView.swift; sourceTree = "<group>"; };
-		8A5FF5FC233FECB100F781C4 /* CalculatorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorProcessor.swift; sourceTree = "<group>"; };
 		8A6154FE2368FE5800D0B439 /* Forex Converter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Forex Converter.entitlements"; sourceTree = "<group>"; };
 		8A6154FF2368FEA600D0B439 /* Strings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Strings.bundle; sourceTree = "<group>"; };
-		8A68D6B1235E396F00076735 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		8A68D6B3235E428E00076735 /* FCLanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCLanguageTableViewController.swift; sourceTree = "<group>"; };
 		8A929C94233B31690071EFC0 /* Forex Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forex Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A929C97233B31690071EFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A929C9C233B31690071EFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A929C9F233B31690071EFC0 /* Forex_Converter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Forex_Converter.xcdatamodel; sourceTree = "<group>"; };
 		8A929CA1233B316B0071EFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A929CA4233B316B0071EFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,21 +89,33 @@
 		8A929CCB233B336B0071EFC0 /* StoryboardCustomXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardCustomXibView.swift; sourceTree = "<group>"; };
 		8A929CCC233B336B0071EFC0 /* UIViewConstraintsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraintsExtension.swift; sourceTree = "<group>"; };
 		8A929CD7233B43480071EFC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		8A929D2A233BEAA90071EFC0 /* FCNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNetworkManager.swift; sourceTree = "<group>"; };
-		8A929D2E233C05420071EFC0 /* FCXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCXMLParser.swift; sourceTree = "<group>"; };
-		8A929D30233C0BF10071EFC0 /* FCDataSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCDataSourceManager.swift; sourceTree = "<group>"; };
+		8A929D2A233BEAA90071EFC0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8A929D2E233C05420071EFC0 /* BankOfIsraelParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOfIsraelParser.swift; sourceTree = "<group>"; };
 		8A929D32233C0C5F0071EFC0 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		8A97CCE62346A2F400DD4C3E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		8AA0FFAA235F638A005FF7D7 /* help_alert_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_alert_1.png; sourceTree = "<group>"; };
-		8AA63F892356E6160078EC02 /* FCFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCFileManager.swift; sourceTree = "<group>"; };
-		8AAAB925235F4C2000C2A666 /* AlertHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelpViewController.swift; sourceTree = "<group>"; };
-		8AAAB926235F4C2000C2A666 /* AlertHelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertHelpViewController.xib; sourceTree = "<group>"; };
-		8AB0F12623436CA700850B4A /* FCRateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCRateTableViewCell.swift; sourceTree = "<group>"; };
-		8ACB0FBA234289610023190F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		8ACB0FBC234293F90023190F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		8ACB0FC02342A92B0023190F /* FCCurrenciesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCCurrenciesTableViewController.swift; sourceTree = "<group>"; };
-		8AE9EBC6234BAEEF0081646D /* FCDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCDisplayLogic.swift; sourceTree = "<group>"; };
-		8AE9EBC8234BAEF90081646D /* FCKeypadLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCKeypadLogic.swift; sourceTree = "<group>"; };
+		8AA911972552B5E200ABCAA9 /* RSSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
+		8AA9119A2552B5E200ABCAA9 /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
+		8AA911A32552BBF700ABCAA9 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		8AA911A62552C01E00ABCAA9 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		8AA911A72552C01E00ABCAA9 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		8AA911AB2553047000ABCAA9 /* Locale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
+		8AA911CC2553307A00ABCAA9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8AA911CF255330AE00ABCAA9 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		8AA911D32553336B00ABCAA9 /* RatesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatesViewController.xib; sourceTree = "<group>"; };
+		8AA911DF2553B32800ABCAA9 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		8AA911E52553B97100ABCAA9 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		8AA911FC2554063D00ABCAA9 /* RatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewModel.swift; sourceTree = "<group>"; };
+		8AA912002554237300ABCAA9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		8AA912192554283100ABCAA9 /* FeedTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewController.xib; sourceTree = "<group>"; };
+		8AA9121C2554300D00ABCAA9 /* RatesConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesConverterViewController.swift; sourceTree = "<group>"; };
+		8AA9121D2554300D00ABCAA9 /* RatesConverterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatesConverterViewController.xib; sourceTree = "<group>"; };
+		8AA9122E25545F2000ABCAA9 /* RatesConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesConverterViewModel.swift; sourceTree = "<group>"; };
+		8AA9123225545F7000ABCAA9 /* InstagramStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramStory.swift; sourceTree = "<group>"; };
+		8AA912402555266C00ABCAA9 /* RatesConverterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesConverterTableViewCell.swift; sourceTree = "<group>"; };
+		8AA912412555266C00ABCAA9 /* RatesConverterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatesConverterTableViewCell.xib; sourceTree = "<group>"; };
+		8AA9124A255530F800ABCAA9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8ABB7A4F2551DC750023D59B /* RateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		8ABB7A502551DC750023D59B /* RateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateTableViewCell.xib; sourceTree = "<group>"; };
 		92D0FB790FC7B886AA1B367C /* Pods-Forex Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forex Converter.debug.xcconfig"; path = "Target Support Files/Pods-Forex Converter/Pods-Forex Converter.debug.xcconfig"; sourceTree = "<group>"; };
 		F68C93A712B03DCAE450B9C4 /* Pods_Forex_Converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forex_Converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,28 +133,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A47A8BF2365655F000142EE /* Loader */ = {
-			isa = PBXGroup;
-			children = (
-				8A5FF5F0233E576800F781C4 /* FCActivityView.swift */,
-				8A09D348234FA3A4005A91D7 /* FCActivityView.xib */,
-			);
-			path = Loader;
-			sourceTree = "<group>";
-		};
-		8A47A8C023656565000142EE /* Alert Help */ = {
-			isa = PBXGroup;
-			children = (
-				8AAAB925235F4C2000C2A666 /* AlertHelpViewController.swift */,
-				8AAAB926235F4C2000C2A666 /* AlertHelpViewController.xib */,
-			);
-			path = "Alert Help";
-			sourceTree = "<group>";
-		};
 		8A57CB9123599BD0008FEFCE /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				8A57CB9623599BD0008FEFCE /* AnalyticsEvent.swift */,
 				8A57CB9423599BD0008FEFCE /* AnalyticsReporter.swift */,
 				8A57CB9523599BD0008FEFCE /* AnalyticsReporterWrapper.swift */,
 				8A57CB9223599BD0008FEFCE /* AnalyticsScreenViews.swift */,
@@ -176,15 +150,6 @@
 				8A57CB9E2359B821008FEFCE /* ForexConverterViewController.swift */,
 			);
 			path = "Base View Controllers";
-			sourceTree = "<group>";
-		};
-		8A57CBAB235C458A008FEFCE /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				8A57CBA9235C4583008FEFCE /* FCSettingsTableViewController.swift */,
-				8A68D6B3235E428E00076735 /* FCLanguageTableViewController.swift */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		8A929C8B233B31690071EFC0 = {
@@ -209,25 +174,19 @@
 			isa = PBXGroup;
 			children = (
 				8A6154FE2368FE5800D0B439 /* Forex Converter.entitlements */,
-				8A929C97233B31690071EFC0 /* AppDelegate.swift */,
-				8A19EC012351D9D100744D65 /* AppDelegateWrapper.swift */,
+				8AA911F9255405A300ABCAA9 /* Application */,
+				8AA911E9255404A900ABCAA9 /* Coordinator */,
+				8AA911EC255404CE00ABCAA9 /* Models */,
+				8AA911EE255404FB00ABCAA9 /* Views */,
+				8AA911EB255404B600ABCAA9 /* View Models */,
+				8AA911982552B5E200ABCAA9 /* Components */,
+				8AA911E32553B3B700ABCAA9 /* Extensions */,
 				8A57CB9123599BD0008FEFCE /* Analytics */,
-				8A09D34C234FB83E005A91D7 /* SnapshotProvider.swift */,
-				8A09D34E234FB9FB005A91D7 /* CloseButtonView.xib */,
-				8AA0FFAA235F638A005FF7D7 /* help_alert_1.png */,
-				8A04549323632BEC0054301A /* TestPlan.xctestplan */,
-				8AE9EBBC234BAD050081646D /* Extensions */,
 				8AE9EBC4234BAE270081646D /* Common */,
-				8AE9EBC0234BADB20081646D /* UI */,
 				8AE9EBBF234BADA40081646D /* Resources */,
 				8A929CA3233B316B0071EFC0 /* LaunchScreen.storyboard */,
 				8A929CA6233B316B0071EFC0 /* Info.plist */,
 				8A929C9E233B31690071EFC0 /* Forex_Converter.xcdatamodeld */,
-				8A929D30233C0BF10071EFC0 /* FCDataSourceManager.swift */,
-				8A929D2E233C05420071EFC0 /* FCXMLParser.swift */,
-				8A929D32233C0C5F0071EFC0 /* Currency.swift */,
-				8A929D2A233BEAA90071EFC0 /* FCNetworkManager.swift */,
-				8A68D6B1235E396F00076735 /* ThemeManager.swift */,
 			);
 			path = "Forex Converter";
 			sourceTree = "<group>";
@@ -250,36 +209,142 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8AE9EBBC234BAD050081646D /* Extensions */ = {
+		8AA911982552B5E200ABCAA9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				8A19EBFD2351D8B500744D65 /* String+Extenions.swift */,
-				8A19EBFF2351D92B00744D65 /* Bundle+Extenions.swift */,
-				8ACB0FBA234289610023190F /* UIImage+Extension.swift */,
-				8ACB0FBC234293F90023190F /* UIView+Extensions.swift */,
-				8A19EBFB2351C7B100744D65 /* UIAlertController+Extensions.swift */,
-				8A57CBA1235A4FCA008FEFCE /* UIDevice+Extensions.swift */,
+				8A57CBA02359B924008FEFCE /* Base View Controllers */,
+				8A929CCA233B336B0071EFC0 /* Base View */,
+				8AA9119A2552B5E200ABCAA9 /* RSSParser.swift */,
+				8A929D2E233C05420071EFC0 /* BankOfIsraelParser.swift */,
+				8A929D2A233BEAA90071EFC0 /* NetworkManager.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8AA911E32553B3B700ABCAA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8AA911AB2553047000ABCAA9 /* Locale+Extension.swift */,
+				8AA911DF2553B32800ABCAA9 /* NSObject+Extension.swift */,
+				8AA912002554237300ABCAA9 /* DateFormatter+Extension.swift */,
+				8AA9124A255530F800ABCAA9 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		8AE9EBBD234BAD180081646D /* Main */ = {
+		8AA911E9255404A900ABCAA9 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				8A48B0CD2349BC39000BC297 /* FCMainViewController.swift */,
-				8A48B0CF2349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift */,
-				8AE9EBCC234BB0310081646D /* Logic */,
+				8AA911CC2553307A00ABCAA9 /* Coordinator.swift */,
+				8AA911CF255330AE00ABCAA9 /* ApplicationCoordinator.swift */,
 			);
-			path = Main;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		8AE9EBBE234BAD4B0081646D /* Currencies */ = {
+		8AA911EB255404B600ABCAA9 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				8ACB0FC02342A92B0023190F /* FCCurrenciesTableViewController.swift */,
-				8AE9EBC3234BADE80081646D /* Cells */,
+				8AA911FC2554063D00ABCAA9 /* RatesViewModel.swift */,
+				8AA9122E25545F2000ABCAA9 /* RatesConverterViewModel.swift */,
+				8AA911E52553B97100ABCAA9 /* FeedViewModel.swift */,
 			);
-			path = Currencies;
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8AA911EC255404CE00ABCAA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A929D32233C0C5F0071EFC0 /* Currency.swift */,
+				8AA911972552B5E200ABCAA9 /* RSSItem.swift */,
+				8AA9123225545F7000ABCAA9 /* InstagramStory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8AA911EE255404FB00ABCAA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AA911F32554052B00ABCAA9 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AA911F32554052B00ABCAA9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8AA911F42554053C00ABCAA9 /* Rates */,
+				8AA912212554301200ABCAA9 /* Rates Converter */,
+				8AA911F62554054900ABCAA9 /* RSS Feed */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8AA911F42554053C00ABCAA9 /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				8A351C8A2551E3FD0063289B /* RatesViewController.swift */,
+				8AA911D32553336B00ABCAA9 /* RatesViewController.xib */,
+				8AA91206255425F600ABCAA9 /* Cells */,
+			);
+			path = Rates;
+			sourceTree = "<group>";
+		};
+		8AA911F62554054900ABCAA9 /* RSS Feed */ = {
+			isa = PBXGroup;
+			children = (
+				8AA911A32552BBF700ABCAA9 /* FeedTableViewController.swift */,
+				8AA912192554283100ABCAA9 /* FeedTableViewController.xib */,
+				8AA91208255425FC00ABCAA9 /* Cells */,
+			);
+			path = "RSS Feed";
+			sourceTree = "<group>";
+		};
+		8AA911F9255405A300ABCAA9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8A351C872551E11E0063289B /* Application.swift */,
+				8A929CD7233B43480071EFC0 /* Constants.swift */,
+				8A929C97233B31690071EFC0 /* AppDelegate.swift */,
+				8A19EC012351D9D100744D65 /* AppDelegateWrapper.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8AA91206255425F600ABCAA9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8ABB7A4F2551DC750023D59B /* RateTableViewCell.swift */,
+				8ABB7A502551DC750023D59B /* RateTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8AA91208255425FC00ABCAA9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8AA911A62552C01E00ABCAA9 /* FeedTableViewCell.swift */,
+				8AA911A72552C01E00ABCAA9 /* FeedTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8AA912212554301200ABCAA9 /* Rates Converter */ = {
+			isa = PBXGroup;
+			children = (
+				8AA9121C2554300D00ABCAA9 /* RatesConverterViewController.swift */,
+				8AA9121D2554300D00ABCAA9 /* RatesConverterViewController.xib */,
+				8AA912452555277E00ABCAA9 /* Cells */,
+			);
+			path = "Rates Converter";
+			sourceTree = "<group>";
+		};
+		8AA912452555277E00ABCAA9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8AA912402555266C00ABCAA9 /* RatesConverterTableViewCell.swift */,
+				8AA912412555266C00ABCAA9 /* RatesConverterTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		8AE9EBBF234BADA40081646D /* Resources */ = {
@@ -292,63 +357,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		8AE9EBC0234BADB20081646D /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				8AE9EBC2234BADCD0081646D /* Components */,
-				8AE9EBC1234BADC20081646D /* Screens */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		8AE9EBC1234BADC20081646D /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				8A929C9B233B31690071EFC0 /* Main.storyboard */,
-				8AE9EBBD234BAD180081646D /* Main */,
-				8AE9EBBE234BAD4B0081646D /* Currencies */,
-				8A57CBAB235C458A008FEFCE /* Settings */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		8AE9EBC2234BADCD0081646D /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				8A47A8CE2365B93E000142EE /* FCNumericKeypadButton.swift */,
-				8A47A8BF2365655F000142EE /* Loader */,
-				8A57CBA02359B924008FEFCE /* Base View Controllers */,
-				8A929CCA233B336B0071EFC0 /* Base View */,
-				8A47A8C023656565000142EE /* Alert Help */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		8AE9EBC3234BADE80081646D /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				8AB0F12623436CA700850B4A /* FCRateTableViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		8AE9EBC4234BAE270081646D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				8A929CD7233B43480071EFC0 /* Constants.swift */,
-				8AA63F892356E6160078EC02 /* FCFileManager.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		8AE9EBCC234BB0310081646D /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-				8AE9EBC6234BAEEF0081646D /* FCDisplayLogic.swift */,
-				8AE9EBC8234BAEF90081646D /* FCKeypadLogic.swift */,
-				8A5FF5FC233FECB100F781C4 /* CalculatorProcessor.swift */,
-			);
-			path = Logic;
 			sourceTree = "<group>";
 		};
 		F20DE492FA9D372871D5122F /* Pods */ = {
@@ -368,6 +381,7 @@
 			buildConfigurationList = 8A929CBF233B316B0071EFC0 /* Build configuration list for PBXNativeTarget "Forex Converter" */;
 			buildPhases = (
 				5056009A29E7481B46B489AD /* [CP] Check Pods Manifest.lock */,
+				2FB5AB8AABCCD473BE95DE78 /* [CP] Prepare Artifacts */,
 				8A929C90233B31690071EFC0 /* Sources */,
 				8A929C91233B31690071EFC0 /* Frameworks */,
 				8A929C92233B31690071EFC0 /* Resources */,
@@ -394,7 +408,7 @@
 			attributes = {
 				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Idan Moshe";
 				TargetAttributes = {
 					8A929C93233B31690071EFC0 = {
@@ -409,8 +423,6 @@
 			knownRegions = (
 				en,
 				Base,
-				he,
-				ar,
 			);
 			mainGroup = 8A929C8B233B31690071EFC0;
 			packageReferences = (
@@ -430,21 +442,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABB7A522551DC750023D59B /* RateTableViewCell.xib in Resources */,
 				8A929CA5233B316B0071EFC0 /* LaunchScreen.storyboard in Resources */,
-				8AAAB928235F4C2000C2A666 /* AlertHelpViewController.xib in Resources */,
 				8A929CA2233B316B0071EFC0 /* Assets.xcassets in Resources */,
 				8A6155002368FEA600D0B439 /* Strings.bundle in Resources */,
-				8A929C9D233B31690071EFC0 /* Main.storyboard in Resources */,
-				8A09D349234FA3A4005A91D7 /* FCActivityView.xib in Resources */,
-				8AA0FFAB235F638B005FF7D7 /* help_alert_1.png in Resources */,
-				8A09D34F234FB9FB005A91D7 /* CloseButtonView.xib in Resources */,
+				8AA9121A2554283100ABCAA9 /* FeedTableViewController.xib in Resources */,
+				8AA911D42553336B00ABCAA9 /* RatesViewController.xib in Resources */,
+				8AA911A92552C01E00ABCAA9 /* FeedTableViewCell.xib in Resources */,
 				8A57CB9023599575008FEFCE /* GoogleService-Info.plist in Resources */,
+				8AA9121F2554300D00ABCAA9 /* RatesConverterViewController.xib in Resources */,
+				8AA912432555266C00ABCAA9 /* RatesConverterTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2FB5AB8AABCCD473BE95DE78 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Forex Converter/Pods-Forex Converter-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Forex Converter/Pods-Forex Converter-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Forex Converter/Pods-Forex Converter-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5056009A29E7481B46B489AD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,57 +521,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AAAB927235F4C2000C2A666 /* AlertHelpViewController.swift in Sources */,
-				8A57CB9B23599BD0008FEFCE /* AnalyticsEvent.swift in Sources */,
+				8AA911FD2554063D00ABCAA9 /* RatesViewModel.swift in Sources */,
+				8AA911CD2553307A00ABCAA9 /* Coordinator.swift in Sources */,
 				8A57CB9F2359B821008FEFCE /* ForexConverterViewController.swift in Sources */,
-				8A09D34D234FB83E005A91D7 /* SnapshotProvider.swift in Sources */,
 				8A57CB9D2359A027008FEFCE /* VisibilityTrackingViewController.swift in Sources */,
-				8A47A8CF2365B93E000142EE /* FCNumericKeypadButton.swift in Sources */,
-				8A929D2F233C05420071EFC0 /* FCXMLParser.swift in Sources */,
-				8A929D2B233BEAA90071EFC0 /* FCNetworkManager.swift in Sources */,
-				8AE9EBC9234BAEF90081646D /* FCKeypadLogic.swift in Sources */,
-				8A19EBFC2351C7B100744D65 /* UIAlertController+Extensions.swift in Sources */,
+				8A929D2F233C05420071EFC0 /* BankOfIsraelParser.swift in Sources */,
+				8AA911AC2553047000ABCAA9 /* Locale+Extension.swift in Sources */,
+				8AA9122F25545F2000ABCAA9 /* RatesConverterViewModel.swift in Sources */,
+				8AA9119C2552B5E200ABCAA9 /* RSSItem.swift in Sources */,
+				8A929D2B233BEAA90071EFC0 /* NetworkManager.swift in Sources */,
+				8AA9119E2552B5E200ABCAA9 /* RSSParser.swift in Sources */,
+				8A351C8B2551E3FD0063289B /* RatesViewController.swift in Sources */,
 				8A929CCD233B336C0071EFC0 /* StoryboardCustomXibView.swift in Sources */,
 				8A19EC022351D9D100744D65 /* AppDelegateWrapper.swift in Sources */,
-				8ACB0FBD234293F90023190F /* UIView+Extensions.swift in Sources */,
-				8A48B0D02349BCA1000BC297 /* FCMainViewControllerPresenterLogic.swift in Sources */,
+				8AA911E02553B32800ABCAA9 /* NSObject+Extension.swift in Sources */,
 				8A929D33233C0C5F0071EFC0 /* Currency.swift in Sources */,
-				8AB0F12823436CA700850B4A /* FCRateTableViewCell.swift in Sources */,
 				8A57CB9723599BD0008FEFCE /* AnalyticsScreenViews.swift in Sources */,
-				8A5FF5FD233FECB100F781C4 /* CalculatorProcessor.swift in Sources */,
-				8A5FF5F1233E576800F781C4 /* FCActivityView.swift in Sources */,
-				8A19EC002351D92B00744D65 /* Bundle+Extenions.swift in Sources */,
 				8A929C98233B31690071EFC0 /* AppDelegate.swift in Sources */,
 				8A929CCE233B336C0071EFC0 /* UIViewConstraintsExtension.swift in Sources */,
-				8A68D6B4235E428E00076735 /* FCLanguageTableViewController.swift in Sources */,
-				8ACB0FBB234289610023190F /* UIImage+Extension.swift in Sources */,
-				8A57CBAA235C4583008FEFCE /* FCSettingsTableViewController.swift in Sources */,
+				8A351C882551E11E0063289B /* Application.swift in Sources */,
 				8A929CA0233B31690071EFC0 /* Forex_Converter.xcdatamodeld in Sources */,
 				8A57CB9A23599BD0008FEFCE /* AnalyticsReporterWrapper.swift in Sources */,
-				8ACB0FC12342A92B0023190F /* FCCurrenciesTableViewController.swift in Sources */,
+				8AA9121E2554300D00ABCAA9 /* RatesConverterViewController.swift in Sources */,
+				8AA911E62553B97100ABCAA9 /* FeedViewModel.swift in Sources */,
 				8A57CB9923599BD0008FEFCE /* AnalyticsReporter.swift in Sources */,
-				8AE9EBC7234BAEEF0081646D /* FCDisplayLogic.swift in Sources */,
-				8A68D6B2235E396F00076735 /* ThemeManager.swift in Sources */,
+				8AA911A82552C01E00ABCAA9 /* FeedTableViewCell.swift in Sources */,
+				8AA911A42552BBF700ABCAA9 /* FeedTableViewController.swift in Sources */,
+				8AA9124B255530F800ABCAA9 /* UIImage+Extension.swift in Sources */,
+				8AA912422555266C00ABCAA9 /* RatesConverterTableViewCell.swift in Sources */,
 				8A929CD8233B43480071EFC0 /* Constants.swift in Sources */,
-				8A929D31233C0BF10071EFC0 /* FCDataSourceManager.swift in Sources */,
-				8AA63F8A2356E6160078EC02 /* FCFileManager.swift in Sources */,
-				8A57CBA2235A4FCA008FEFCE /* UIDevice+Extensions.swift in Sources */,
-				8A19EBFE2351D8B500744D65 /* String+Extenions.swift in Sources */,
-				8A48B0CE2349BC39000BC297 /* FCMainViewController.swift in Sources */,
+				8AA912012554237300ABCAA9 /* DateFormatter+Extension.swift in Sources */,
+				8ABB7A512551DC750023D59B /* RateTableViewCell.swift in Sources */,
+				8AA9123325545F7000ABCAA9 /* InstagramStory.swift in Sources */,
+				8AA911D0255330AE00ABCAA9 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8A929C9B233B31690071EFC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A929C9C233B31690071EFC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A929CA3233B316B0071EFC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -580,6 +598,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -605,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -642,6 +661,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -661,7 +681,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -679,15 +699,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Forex Converter/Forex Converter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.0;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = N3N3LX399B;
 				INFOPLIST_FILE = "Forex Converter/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.idanmoshe.forexconverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -704,15 +724,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Forex Converter/Forex Converter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.0;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = N3N3LX399B;
 				INFOPLIST_FILE = "Forex Converter/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.idanmoshe.forexconverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;

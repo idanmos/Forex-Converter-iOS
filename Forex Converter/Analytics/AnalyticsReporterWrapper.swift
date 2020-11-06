@@ -23,34 +23,7 @@ import Firebase
   public func setOptOut(_ isOptedOut: Bool) {}
     
     public func trackScreenView(named screenName: String) {
-        Analytics.setScreenName(screenName, screenClass: nil)
+        Analytics.logEvent(AnalyticsEventScreenView, parameters: nil)
     }
     
-    public func track(_ analyticsEvent: AnalyticsEvent) {
-        #if DEBUG
-        print(analyticsEvent)
-        #endif
-        
-        var analytics: [String: Any] = [:]
-        analytics["category"] = analyticsEvent.category
-        
-        if let label: String = analyticsEvent.label {
-            analytics["label"] = label
-        }
-        
-        if let value: NSNumber = analyticsEvent.value {
-            analytics["value"] = value
-        }
-        
-        if let params: [String: String] = analyticsEvent.params {
-            params.forEach { (arg0) in
-                
-                let (key, value) = arg0
-                analytics[key] = value
-            }
-        }
-        
-        Analytics.logEvent(analyticsEvent.action, parameters: analytics)
-    }
-
 }
