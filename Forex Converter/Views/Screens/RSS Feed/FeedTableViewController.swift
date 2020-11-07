@@ -20,10 +20,12 @@ class FeedTableViewController: ForexConverterTableViewController {
     private lazy var refresh: UIRefreshControl = {
         let control = UIRefreshControl()
         control.attributedTitle = NSAttributedString(string: "משוך לרענון")
-        control.addTarget(self, action: #selector(self.pullToRefresh), for: .valueChanged)
+        control.addTarget(self, action: #selector(self.fetchData), for: .valueChanged)
         return control
     }()
-        
+    
+    private var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,11 +34,6 @@ class FeedTableViewController: ForexConverterTableViewController {
         self.tableView.register(UINib(nibName: FeedTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: FeedTableViewCell.identifier)
         
         self.refreshControl = self.refresh
-        
-        self.feedViewModel.fetchRSS { [weak self] in
-            guard let self = self else { return }
-            self.tableView.reloadData()
-        }
                 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -44,26 +41,34 @@ class FeedTableViewController: ForexConverterTableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        self.fetchData()
+        
         let bannerView = GADBannerView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 80))
         bannerView.adUnitID = Constants.GoogleAdMob_AdUnitId_Banner
         bannerView.rootViewController = self
         bannerView.isAutoloadEnabled = true
         self.tableView.tableHeaderView = bannerView
+        
+        self.timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(self.fetchData), userInfo: nil, repeats: true)
+    }
+    
+    deinit {
+        self.timer?.invalidate()
+        self.timer = nil
     }
     
     // MARK: - General methods
     
-    private func fetchData(comnpletionHandler: @escaping () -> Void) {
+    @objc private func fetchData() {
+        debugPrint(#file, #function)
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         self.feedViewModel.fetchRSS {  [weak self] in
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            
             guard let self = self else { return }
             self.tableView.reloadData()
-            comnpletionHandler()
-        }
-    }
-    
-    @objc private func pullToRefresh() {
-        self.fetchData { [weak self] in
-            guard let self = self else { return }
             self.refreshControl?.endRefreshing()
         }
     }

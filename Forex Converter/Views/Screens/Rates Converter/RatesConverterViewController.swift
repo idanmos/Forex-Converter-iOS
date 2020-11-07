@@ -16,6 +16,7 @@ class RatesConverterViewController: ForexConverterViewController {
     
     private let ratesConverterViewModel = RatesConverterViewModel()
     private let reuseIdentifier: String = "reuseIdentifier"
+    private var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +41,29 @@ class RatesConverterViewController: ForexConverterViewController {
         bannerView.isAutoloadEnabled = true
         self.tableView.tableHeaderView = bannerView
         
+        self.fetchData()
+        
+        self.timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(self.fetchData), userInfo: nil, repeats: true)
+    }
+    
+    deinit {
+        self.timer?.invalidate()
+        self.timer = nil
+    }
+    
+    // MARK: - General methods
+    
+    @objc private func fetchData() {
+        debugPrint(#file, #function)
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         self.ratesConverterViewModel.fetchData { [weak self] in
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            
             guard let self = self else { return }
             self.tableView.reloadData()
+            self.tableView.refreshControl?.endRefreshing()
         }
     }
 

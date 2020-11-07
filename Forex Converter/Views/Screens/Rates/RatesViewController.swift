@@ -25,6 +25,8 @@ class RatesViewController: ForexConverterTableViewController {
         return control
     }()
     
+    private var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,12 +43,25 @@ class RatesViewController: ForexConverterTableViewController {
         bannerView.rootViewController = self
         bannerView.isAutoloadEnabled = true
         self.tableView.tableHeaderView = bannerView
+        
+        self.timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(self.fetchData), userInfo: nil, repeats: true)
+    }
+    
+    deinit {
+        self.timer?.invalidate()
+        self.timer = nil
     }
     
     // MARK: - General methods
     
     @objc private func fetchData() {
+        debugPrint(#file, #function)
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         self.ratesViewModel.fetchCurrencies { [weak self] in
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            
             guard let self = self else { return }
             self.tableView.reloadData()
             self.refreshControl?.endRefreshing()
@@ -56,7 +71,7 @@ class RatesViewController: ForexConverterTableViewController {
     // MARK: - UITableViewDelegate & UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
