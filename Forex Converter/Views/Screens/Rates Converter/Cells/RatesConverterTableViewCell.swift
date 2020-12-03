@@ -27,13 +27,13 @@ class RatesConverterTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(currency: Currency, textFieldText: String?) {
+    func configure(convert: Currency, to: Currency, text: String?) {
         var right: String = ""
         
-        if let localized: String = Locale.hebrewLocale.localizedString(forCurrencyCode: currency.currencyCode) {
+        if let localized: String = Locale.hebrewLocale.localizedString(forCurrencyCode: to.currencyCode) {
             right = localized
         } else {
-            let localizedCountry: String = CurrencyType(rawValue: currency.currencyCode)?.localizedCountry ?? ""
+            let localizedCountry: String = CurrencyType(rawValue: to.currencyCode)?.localizedCountry ?? ""
             right = localizedCountry
         }
         
@@ -41,19 +41,54 @@ class RatesConverterTableViewCell: UITableViewCell {
         
         var middle: String = ""
         
-        if let text = textFieldText, let amount = Double(text) {
+        if let text = text, let amount = Double(text) {
+            var finalAmount: Double = 0.0
+            
+            if convert.currencyCode == CurrencyType.ILS.rawValue {
+                finalAmount = amount/to.rate
+            } else {
+                finalAmount = (convert.rate / to.rate) * amount
+            }
+            
             let numberFormatter = NumberFormatter.numberFormatter
             // numberFormatter.currencyCode = currency.currencyCode
-            if let formattedAmount = numberFormatter.string(from: NSNumber(value: amount/currency.rate)) {
+            if let formattedAmount = numberFormatter.string(from: NSNumber(value: finalAmount)) {
                 middle = "\(formattedAmount)"
-            } else {
-                middle = "\(amount/currency.rate)"
             }
         }
         
         self.middleLabel.text = middle
         
-        self.LeftLabel.text = currency.sign
+        self.LeftLabel.text = to.sign
     }
+    
+//    func configure(currency: Currency, textFieldText: String?) {
+//        var right: String = ""
+//
+//        if let localized: String = Locale.hebrewLocale.localizedString(forCurrencyCode: currency.currencyCode) {
+//            right = localized
+//        } else {
+//            let localizedCountry: String = CurrencyType(rawValue: currency.currencyCode)?.localizedCountry ?? ""
+//            right = localizedCountry
+//        }
+//
+//        self.rightLabel.text = right
+//
+//        var middle: String = ""
+//
+//        if let text = textFieldText, let amount = Double(text) {
+//            let numberFormatter = NumberFormatter.numberFormatter
+//            // numberFormatter.currencyCode = currency.currencyCode
+//            if let formattedAmount = numberFormatter.string(from: NSNumber(value: amount/currency.rate)) {
+//                middle = "\(formattedAmount)"
+//            } else {
+//                middle = "\(amount/currency.rate)"
+//            }
+//        }
+//
+//        self.middleLabel.text = middle
+//
+//        self.LeftLabel.text = currency.sign
+//    }
     
 }

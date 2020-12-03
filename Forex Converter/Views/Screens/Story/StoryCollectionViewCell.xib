@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCollectionViewCell" id="KqQ-7v-nOV" customClass="StoryCollectionViewCell" customModule="Forex_Converter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ovh-De-g7H">
+                <rect key="frame" x="0.0" y="0.0" width="82" height="99"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XR5-t2-YcO">
+                        <rect key="frame" x="0.0" y="0.0" width="82" height="99"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXF-0F-5XP">
+                                <rect key="frame" x="4" y="0.0" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mxl-Oc-04f">
+                                <rect key="frame" x="8.5" y="10" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="8Os-tx-s8C"/>
+                                    <constraint firstAttribute="width" constant="65" id="rIc-4H-vpM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVu-wI-H7I">
+                                <rect key="frame" x="0.0" y="78" width="82" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="G0e-00-dso"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mVu-wI-H7I" secondAttribute="trailing" id="Doz-05-B6N"/>
+                            <constraint firstItem="mVu-wI-H7I" firstAttribute="top" secondItem="Mxl-Oc-04f" secondAttribute="bottom" constant="3" id="TtY-cu-XgT"/>
+                            <constraint firstAttribute="bottom" secondItem="mVu-wI-H7I" secondAttribute="bottom" id="f3H-nq-DIQ"/>
+                            <constraint firstItem="mVu-wI-H7I" firstAttribute="leading" secondItem="XR5-t2-YcO" secondAttribute="leading" id="hkO-hK-BK8"/>
+                            <constraint firstItem="Mxl-Oc-04f" firstAttribute="leading" secondItem="XR5-t2-YcO" secondAttribute="leading" constant="8.5" id="nY0-p8-9fK"/>
+                            <constraint firstItem="Mxl-Oc-04f" firstAttribute="top" secondItem="XR5-t2-YcO" secondAttribute="top" constant="10" id="nYS-Nq-Ab3"/>
+                            <constraint firstAttribute="trailing" secondItem="Mxl-Oc-04f" secondAttribute="trailing" constant="8.5" id="s8S-qu-eQl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XR5-t2-YcO" firstAttribute="top" secondItem="Ovh-De-g7H" secondAttribute="top" id="WHE-iW-VoJ"/>
+                    <constraint firstAttribute="trailing" secondItem="XR5-t2-YcO" secondAttribute="trailing" id="lJ8-RS-CR7"/>
+                    <constraint firstItem="XR5-t2-YcO" firstAttribute="leading" secondItem="Ovh-De-g7H" secondAttribute="leading" id="pNE-Gf-jso"/>
+                    <constraint firstAttribute="bottom" secondItem="XR5-t2-YcO" secondAttribute="bottom" id="u09-TZ-U66"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="currentMonthView" destination="HXF-0F-5XP" id="zKN-8R-780"/>
+                <outlet property="imageView" destination="Mxl-Oc-04f" id="m4D-dS-pfE"/>
+                <outlet property="titleLabel" destination="mVu-wI-H7I" id="Rie-XV-gx8"/>
+            </connections>
+            <point key="canvasLocation" x="-742" y="-79"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

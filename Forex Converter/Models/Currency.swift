@@ -168,6 +168,30 @@ struct Currency: Codable {
         return formatter
     }()
     
+    static func getIsraeliCurrencyFormatter() -> NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.usesGroupingSeparator = true
+        formatter.numberStyle = .currency
+        formatter.locale = Locale(identifier: "he_IL")
+        return formatter
+    }
+    
+    static func getIsraeliShekel() -> Currency {
+        let ILS = CurrencyType.ILS
+        
+        let currency = Currency(date: Date(),
+                                name: ILS.localizedName,
+                                unit: 1,
+                                currencyCode: ILS.rawValue,
+                                country: ILS.localizedCountry,
+                                rate: 1,
+                                change: 1,
+                                sign: ILS.sign,
+                                currencyFormatter: Currency.getIsraeliCurrencyFormatter())
+        
+        return currency
+    }
+    
 }
 
 extension Currency {

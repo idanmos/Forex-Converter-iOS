@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatesConverterViewController" customModule="Forex_Converter" customModuleProvider="target">
             <connections>
+                <outlet property="selectedFlagCurrencySignLabel" destination="ubX-cT-fwf" id="jKv-uB-2kf"/>
+                <outlet property="selectedFlagImageView" destination="N5x-TP-l3Q" id="2UW-CM-msK"/>
+                <outlet property="storyCollectionView" destination="3Vh-BR-bDp" id="xsC-Qw-4JH"/>
                 <outlet property="tableView" destination="ueR-Iv-Ubk" id="9pl-Ts-r9V"/>
                 <outlet property="textField" destination="4hG-Xl-7GV" id="nJ0-az-ME2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ueR-Iv-Ubk">
-                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <rect key="frame" x="0.0" y="200" width="414" height="662"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="o1T-rt-7A5"/>
@@ -30,25 +33,25 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIW-JH-PWE">
-                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <rect key="frame" x="0.0" y="150" width="414" height="50"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="סכום בשקלים" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-Xl-7GV">
-                            <rect key="frame" x="83" y="5" width="311" height="40"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="סכום" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-Xl-7GV">
+                            <rect key="frame" x="113" y="5" width="281" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             <connections>
                                 <outlet property="delegate" destination="-1" id="Obp-V0-vMs"/>
                             </connections>
                         </textField>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ILS" translatesAutoresizingMaskIntoConstraints="NO" id="N5x-TP-l3Q">
-                            <rect key="frame" x="20" y="7.5" width="35" height="35"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ILS" translatesAutoresizingMaskIntoConstraints="NO" id="N5x-TP-l3Q">
+                            <rect key="frame" x="20" y="7.5" width="65" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="AgU-Xx-3Ne"/>
-                                <constraint firstAttribute="width" constant="35" id="WQu-on-oAe"/>
+                                <constraint firstAttribute="width" constant="65" id="WQu-on-oAe"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubX-cT-fwf">
-                            <rect key="frame" x="63" y="14.5" width="12" height="21"/>
+                            <rect key="frame" x="93" y="14.5" width="12" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -67,19 +70,29 @@
                         <constraint firstItem="N5x-TP-l3Q" firstAttribute="leading" secondItem="pIW-JH-PWE" secondAttribute="leading" constant="20" symbolic="YES" id="t4C-eR-9YB"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vh-BR-bDp" customClass="StoryCollectionView" customModule="Forex_Converter" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="106"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="106" id="tyb-aO-aIV"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ueR-Iv-Ubk" secondAttribute="bottom" id="2Vx-Ng-3xG"/>
-                <constraint firstItem="pIW-JH-PWE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LEO-O5-UJJ"/>
+                <constraint firstItem="3Vh-BR-bDp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JHE-RS-Iwj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ueR-Iv-Ubk" secondAttribute="trailing" id="O1d-ju-v04"/>
                 <constraint firstItem="ueR-Iv-Ubk" firstAttribute="top" secondItem="pIW-JH-PWE" secondAttribute="bottom" id="O5W-LR-p6a"/>
                 <constraint firstItem="ueR-Iv-Ubk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qba-xf-DFZ"/>
+                <constraint firstItem="pIW-JH-PWE" firstAttribute="top" secondItem="3Vh-BR-bDp" secondAttribute="bottom" id="Qs8-NY-FYl"/>
                 <constraint firstItem="pIW-JH-PWE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="brV-vr-DX6"/>
+                <constraint firstItem="3Vh-BR-bDp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dFf-Sd-lGL"/>
+                <constraint firstItem="3Vh-BR-bDp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="haS-hs-4rk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pIW-JH-PWE" secondAttribute="trailing" id="k5y-7G-Ud2"/>
             </constraints>
-            <point key="canvasLocation" x="-175" y="46"/>
+            <point key="canvasLocation" x="-175.36231884057972" y="45.535714285714285"/>
         </view>
     </objects>
     <resources>

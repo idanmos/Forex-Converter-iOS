@@ -10,7 +10,6 @@ import UIKit
 
 class RatesConverterViewModel {
     
-    var instagramStories: [InstagramStory] = []
     var currencies: [Currency] = []
         
     func fetchData(completionHandler: @escaping () -> Void) {
@@ -22,23 +21,8 @@ class RatesConverterViewModel {
                 xmlParser.parse()
                 
                 self.currencies.removeAll()
+                self.currencies.append(Currency.getIsraeliShekel())
                 self.currencies.append(contentsOf: xmlParser.getCurrencies())
-                
-                self.instagramStories.removeAll()
-                
-                for currency: Currency in self.currencies {
-                    var title: String = ""
-                    
-                    if let localized: String = Locale.hebrewLocale.localizedString(forCurrencyCode: currency.currencyCode) {
-                        title = "\(currency.unit) \(localized)"
-                    } else {
-                        let localizedCountry: String = CurrencyType(rawValue: currency.currencyCode)?.localizedCountry ?? ""
-                        title = localizedCountry
-                    }
-                    
-                    let story = InstagramStory(imageName: currency.currencyCode, title: title)
-                    self.instagramStories.append(story)
-                }
                 
                 DispatchQueue.main.async {
                     completionHandler()

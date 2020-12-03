@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Combine
 
 class NetworkManager {
     
@@ -24,6 +25,29 @@ class NetworkManager {
                 }
             }
         }
+    }
+    
+    // MARK: - Combine
+    
+    var cancellable: Set<AnyCancellable> = Set()
+    
+    func fetchData(url: String, completionHandler: @escaping (Any?) -> Void) {
+        guard let fixedURL = URL(string: url) else {
+            completionHandler(nil)
+            return
+        }
+        
+        URLSession.shared.dataTaskPublisher(for: fixedURL)
+            .map({$0.data})
+            // .decode(type: ChuckJokes.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+            .receive(on: DispatchQueue.main)
+            .sink { (completion) in
+                //
+            } receiveValue: { (data1: Data) in
+                //
+            }
+            .store(in: &self.cancellable)
     }
     
 }
